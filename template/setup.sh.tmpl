@@ -1,0 +1,57 @@
+#!/bin/sh
+
+BASE_URL="{{(ds "config").url}}"
+DEB_REPO_NAME="{{(ds "config").deb.name}}"
+RPM_REPO_NAME="{{(ds "config").rpm.name}}"
+
+function setup-deb() {
+  echo "Download autor's gpg key"
+  curl "$BASE_URL/KEY.gpg" | gpg --dearmor | sudo tee "/etc/apt/trusted.gpg.d/$DEB_REPO_NAME.gpg" > /dev/null
+  echo " Download repo list file"
+  curl "$BASE_URL/deb/deb.list" | sudo tee /etc/apt/sources.list.d/$DEB_REPO_NAME.list > /dev/null
+  echo "Running apt update"
+  sudo apt update
+}
+
+function setup-rpm() {
+  echo " Download repo list file"
+  curl "$BASE_URL/rpm/rpm.repo" | sudo tee "/etc/yum.repos.d/$RPM_REPO_NAME.repo"
+  echo "Running dnf clean all"
+  sudo dnf clean all
+}
+
+function detect_pkg_type() {
+  local id id_like
+  # try /etc/os-release first (most reliable)
+  if [[ -r /etc/os-release ]]; then
+    # shellcheck disable=SC1091
+    . /etc/os-release
+    id=${ID,,}
+    id_like=${ID_LIKE,,}
+    # check ID_LIKE and ID for known families
+    if [[ $id_like == *debian* || $id == "debian" || $id == "ubuntu" || $id == "linuxmint" ]]; then
+      echo 'deb'
+      return
+    fi
+    if [[ $id_like == *rhel* || $id_like == *fedora* || $id == "rhel" || $id == "centos" || $id == "fedora" || $id == "rocky" || $id == "almalinux" ]]; then
+      echo 'rpm'
+      return
+    fi
+  fi
+
+  echo 'other'
+}
+
+case "$(detect_pkg_type)" in
+  "deb")
+    setup-deb
+    exit 0
+    ;;
+  "rpm")
+    setup-rpm
+    exit 0
+    ;;
+esac
+
+echo "Unknown distro; This repo can be used only with deb/rmp based ones." 1>&2
+

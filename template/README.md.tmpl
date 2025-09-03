@@ -1,0 +1,41 @@
+```
+.'''--..                    ..--'''.
+' ' ' ' '-.              .-' ' ' ' '
+  | | | | ' '-. .**. .-' ' | | | |
+          | '  '    '  ' |
+              |      |
+         .'\\/  ____  \//'.
+        /      /    \      \
+       /       \_  _/       \
+      /      \  ||||  /      \
+     /  --    \      /    --  \
+    /  /  \      /\      /  \  \
+   /   \  /   \  \/  /   \  /   \
+  / /\  --  .-'\    /'-.  --  /\ \
+ /  \/   .-'   '|  |'   '-.   \/  \
+ "    .-' \.../ """" \.../ '-.    "
+  ''''           ""           ''''
+```
+
+[ASCII Moth's](https://github.com/asciimoth) personal deb/rpm repo
+
+To add this repo to your deb/rpm system just run:
+```sh
+curl {{(ds "config").url}}/setup.sh | bash
+```
+
+## Content
+- [KEY.gpg]({{(ds "config").url}}/KEY.gpg) - author's key
+- [deb]({{(ds "config").url}}/deb) - deb repo
+{{- range file.Walk "./deb/pool" -}}
+{{ if ne (filepath.Base .) "pool" -}}
+{{"\n\t- "}}[{{ filepath.Base . }}]({{(ds "config").url}}/{{.}})
+{{- end }}
+{{- end }}
+- [rpm]({{(ds "config").url}}/rpm) - rpm repo
+{{- range file.Walk "./rpm/packages" -}}
+{{ if ne (filepath.Base .) "packages" -}}
+{{"\n\t- "}}[{{ filepath.Base . }}]({{(ds "config").url}}/{{.}})
+{{- end }}
+{{- end }}
+

@@ -1,0 +1,366 @@
+#!/usr/bin/env sh
+set -euo pipefail
+
+BASE_DIR="$(dirname "$(realpath "$0")")"
+
+function enter_env() {
+  if [ ! -z "${MAINTAIN_RECURSION+x}" ]; then
+    echo "Found recursion; looks like nix env is broken" 1>&2
+    exit 1
+  fi
+  export MAINTAIN_RECURSION="true"
+  nix develop "$BASE_DIR" --command "$BASE_DIR/maintain" $@
+  exit $?
+}
+
+function check_env() {
+  deps=("yq" "gzip" "rpm" "createrepo_c" "apt" "dpkg" "gomplate")
+  for d in ${deps[@]}; do
+    if ! command -v "$d" >/dev/null 2>&1
+    then
+      enter_env $@
+    fi
+  done
+}
+
+check_env $@
+
+# Read config
+GPG_FPR="$(cat "$BASE_DIR/config.yaml" | yq -r .gpg)"
+URL="$(cat "$BASE_DIR/config.yaml" | yq -r .url)"
+DEB_ORIGIN="$(cat "$BASE_DIR/config.yaml" | yq -r .deb.origin)"
+DEB_LABEL="$(cat "$BASE_DIR/config.yaml" | yq  -r .deb.label)"
+DEB_DESCRIPTION="$(cat "$BASE_DIR/config.yaml" | yq -r .deb.description)"
+
+function help() {
+  echo "maintain [subcommand]"
+  echo ""
+  echo "Main commands:"
+  echo " - help - show this message"
+  echo " - add <package.deb|package.rpm> - add packages"
+  echo " - add <package> - remove all versions of packages"
+  echo " - save - rebuild indexes, commit, push"
+  echo ""
+  echo "Debug:"
+  echo " - clean - remove all files managed by this script"
+  echo " - conf - show values readed from config"
+  echo " - gitstat - show git changes in specific subdir(s)"
+  echo " - commit - commit changes"
+  echo " - rebuild-deb - rebuild deb repo"
+  echo " - rebuild-rpm - rebuild rpm repo"
+  echo " - rebuild-setup - rebuild setup.sh script"
+  echo " - rebuild-readme - rebuild root README.md"
+  echo " - rebuild-md - rebuild README.md for current subdir (deb/rpm)"
+  echo ""
+  echo "Usage:"
+  echo " # Add packages"
+  echo " maintain add packagename.deb packagename.rpm"
+  echo " # Rebuild deb & rpm repos"
+  echo " # git commit -m \"feat: add packagename\""
+  echo " maintain save feat \"add packagename\""
+}
+
+function conf() {
+  echo "gpg:             $GPG_FPR"
+  echo "url:             $URL"
+  echo "deb.origin:      $DEB_ORIGIN"
+  echo "deb.label:       $DEB_LABEL"
+  echo "deb.description: $DEB_DESCRIPTION"
+}
+
+function add_deb() {
+  arch="$(dpkg --info "$1" | awk '/Architecture/ {printf "%s", $2}')"
+  name="$(dpkg --info "$1" | awk '/Package/ {printf "%s", $2}')"
+  if [ "" == "$arch" ]; then
+    arch="all"
+  fi
+  filename="$name-$arch.deb"
+  pkg="$BASE_DIR/deb/pool/$filename"
+  echo "Adding deb $filename"
+  mkdir -p "$BASE_DIR/deb/pool"
+  # Skip if already added
+  if [ -f "$pkg" ]; then
+    version_a="$(dpkg --info "$1" | awk '/Version/ {printf "%s", $2}')"
+    version_b="$(dpkg --info "$1" | awk '/Version/ {printf "%s", $2}')"
+    if [ "$version_a" == "$version_b" ]; then
+      return
+    fi
+  fi
+  cp -u "$1" "$pkg"
+}
+
+function sign_rpm() {
+  rpm --define "_gpg_name $GPG_FPR" --addsign "$1" > /dev/null
+}
+
+function add_rpm() {
+  arch="$(rpm -qp --queryformat '%{ARCH}\n' "$1" 2>/dev/null)"
+  name="$(rpm -qp --queryformat '%{NAME}\n' "$1" 2>/dev/null)"
+  if [ "" == "$arch" ]; then
+    arch="noarch"
+  fi
+  filename="$name-$arch.rpm"
+  echo "Adding rpm $filename"
+  mkdir -p "$BASE_DIR/rpm/packages"
+  pkg="$BASE_DIR/rpm/packages/$filename"
+  # Skip if already added
+  if [ -f "$pkg" ]; then
+    version_a="$(rpm -qp --queryformat '%{VERSION}\n' "$1" 2>/dev/null)"
+    version_b="$(rpm -qp --queryformat '%{VERSION}\n' "$pkg" 2>/dev/null)"
+    if [ "$version_a" == "$version_b" ]; then
+      return
+    fi
+  fi
+  cp -u "$1" "$pkg"
+  echo "  Signing $filename"
+  sign_rpm "$pkg"
+}
+
+function add() {
+  for src in "$@"; do
+    if [ ! -f "$src" ]; then
+      echo "File not found: $src" >&2
+      continue
+    fi
+    filename="$(basename "$src")"
+    case "$filename" in
+      *.deb)
+        add_deb "$src"
+        ;;
+      *.rpm)
+        add_rpm "$src"
+        ;;
+      *)
+        echo "Unknown pkg type: $filename" >&2
+        ;;
+    esac
+  done
+}
+
+function remove() {
+  cd "$BASE_DIR"
+  for pkg in "$@"; do
+    echo "Removing $pkg"
+    if [ -d "deb/pool" ]; then
+      for filename in deb/pool/*.deb; do
+          name="$(dpkg --info "$filename" | awk '/Package/ {printf "%s", $2}')"
+          if [ "$pkg" == "$name" ]; then
+            echo "  removing $filename"
+            rm -f "$filename"
+          fi
+      done
+    fi
+    if [ -d "rpm/packages" ]; then
+      for filename in rpm/packages/*.rpm; do
+          if [ "$pkg" == "$name" ]; then
+            name="$(rpm -qp --queryformat '%{NAME}\n' "$filename" 2>/dev/null)"
+            echo "  removing $filename"
+            rm -f "$filename"
+          fi
+      done
+    fi
+  done
+}
+
+# commit <commit msg>
+# commit <commit type: fix|chore|feat|etc> <commit msg>
+function commit() {
+  if [ ! "$#" -gt 1 ]; then
+    message="$1"
+  else
+    message="$1: $2"
+  fi
+  echo git commit -m "\"$message\""
+}
+
+function rebuild_md() {
+  cat ../template/REPO_README.md.tmpl | gomplate -d config=../config.yaml > README.md
+}
+
+function rebuild_setup() {
+  cat template/setup.sh.tmpl | gomplate -d config=./config.yaml > setup.sh
+  chmod +x setup.sh
+}
+
+function rebuild_readme() {
+  cat template/README.md.tmpl | gomplate -d config=./config.yaml > README.md
+  git add README.md
+}
+
+function gitstat() {
+  git status --porcelain --untracked-files=all -- $@
+}
+
+function add_repo_key() {
+  # Skip if key is already added
+  if [ -f "KEY.gpg" ]; then
+    return
+  fi
+  gpg --export "$GPG_FPR" > KEY.gpg
+  git add KEY.gpg
+}
+
+function rebuild_deb() {
+  mkdir -p "deb/pool"
+  cat template/deb-archive.conf.tmpl | gomplate -d config=./config.yaml > deb/archive.conf
+  cat template/deb.list.tmpl | gomplate -d config=./config.yaml > deb/deb.list
+  cd deb
+  # (Re)generate packages file
+  dpkg-scanpackages -m pool /dev/null > Packages
+  # (Re)generate release file
+  apt-ftparchive -c archive.conf release . > Release
+  # Sign release file
+  gpg --batch --yes --default-key "$GPG_FPR" --armor --detach-sign -o "Release.gpg" "Release"
+  rebuild_md
+  cd ..
+  git add deb
+}
+
+function rebuild_rpm() {
+  mkdir -p rpm/packages
+  cat template/rpm.repo.tmpl | gomplate -d config=./config.yaml > rpm/rpm.repo
+  cd rpm
+  createrepo_c .
+  gpg --batch --yes --default-key "$GPG_FPR" --armor --detach-sign -o "repodata/repomd.xml.asc" "repodata/repomd.xml"
+  rebuild_md
+  cd ..
+  git add rpm
+}
+
+# save <commit msg>
+# save <commit type: fix|chore|feat|etc> <commit msg>
+function save() {
+  cd "$BASE_DIR"
+  if [ "$(gitstat)" == "" ]; then
+    echo "There is no updates; Nothing to do"
+    return
+  fi
+  updates="false"
+  if [ "$(gitstat deb)" != "" ]; then
+    echo "Rebuilding deb..."
+    rebuild_deb
+    updates="true"
+  fi
+  if [ "$(gitstat rpm)" != "" ]; then
+    echo "Rebuilding rpm..."
+    rebuild_rpm
+    updates="true"
+  fi
+  if [ "$updates" == "false" ]; then
+    echo "There is no updates; Nothing to do"
+    return
+  fi
+  add_repo_key
+  rebuild_setup
+  rebuild_readme
+  echo "Commiting..."
+  commit $@
+  echo "Pushing..."
+  git push
+}
+
+function clean() {
+  rm -rf "$BASE_DIR/deb" "$BASE_DIR/rpm" "$BASE_DIR/KEY.gpg" "$BASE_DIR/setup.sh"
+}
+
+function debug() {
+  if [ ! "$#" -gt 0 ]; then
+    help $@
+    exit 1
+  fi
+  case "$1" in
+    "help")
+      shift
+      help $@
+      exit 0
+      ;;
+    "clean")
+      shift
+      clean
+      exit 0
+      ;;
+    "conf")
+      shift
+      conf $@
+      exit 0
+      ;;
+    "gitstat")
+      shift
+      gitstat $@
+      exit 0
+      ;;
+    "commit")
+      shift
+      commit $@
+      exit 0
+      ;;
+    "rebuild-deb")
+      shift
+      cd "$BASE_DIR"
+      rebuild_deb
+      exit 0
+      ;;
+    "rebuild-rpm")
+      shift
+      cd "$BASE_DIR"
+      rebuild_rpm
+      exit 0
+      ;;
+    "rebuild-setup")
+      shift
+      cd "$BASE_DIR"
+      rebuild_setup
+      exit 0
+      ;;
+    "rebuild-readme")
+      shift
+      cd "$BASE_DIR"
+      rebuild_readme
+      exit 0
+      ;;
+    "rebuild-md")
+      shift
+      rebuild_md
+      exit 0
+      ;;
+  esac
+  help $@
+  exit 1
+}
+
+if [ ! "$#" -gt 0 ]; then
+  help $@
+  exit 1
+fi
+
+case "$1" in
+  "help")
+    shift
+    help $@
+    exit 0
+    ;;
+  "add")
+    shift
+    add $@
+    exit 0
+    ;;
+  "remove")
+    shift
+    remove $@
+    exit 0
+    ;;
+  "save")
+    shift
+    save $@
+    exit 0
+    ;;
+  "debug")
+    shift
+    debug $@
+    exit 0
+    ;;
+esac
+
+help $@
+exit 1
+

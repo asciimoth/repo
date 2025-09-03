@@ -1,0 +1,9 @@
+APT::FTPArchive::Release {
+  Origin "{{(ds "config").deb.origin}}";
+  Label "{{(ds "config").deb.label}}";
+  Suite "stable";
+  Codename "stable";
+  Architectures "all";
+  Components "main";
+  Description "{{(ds "config").deb.description}}";
+}
