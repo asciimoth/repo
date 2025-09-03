@@ -1,0 +1,7 @@
+[asciimoth]
+name=asciimoth
+baseurl=https://repo.moth.contact/rpm
+enabled=1
+gpgcheck=1
+gpgkey=https://repo.moth.contact/KEY.gpg
+

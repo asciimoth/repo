@@ -1,0 +1,20 @@
+Architectures: all
+Codename: stable
+Components: main
+Date: Wed, 03 Sep 2025 23:54:30 +0000
+Description: ASCII Moth's personal APT and RPM repo
+Label: asciimoth
+Origin: asciimoth
+Suite: stable
+MD5Sum:
+ 2eb568b415813f281bda60aa5125a34e             1437 Packages
+ d861032649393bc6780da46411a8bbad              192 Release
+SHA1:
+ 02a8ddf9a37b7ce41db043571462a89661a51f82             1437 Packages
+ 0a99c2118b23226c4225153a49143445480eb29c              192 Release
+SHA256:
+ aafce8b4cfd52a7f03e15cb513c153267546eba3d00907bdcd657d2991d249cf             1437 Packages
+ 0454e5720ecccb805ac0ff02ad996af7fea2dda07b957b07c48cad8211673957              192 Release
+SHA512:
+ 7ca38ba763caf19ac7f786725485fb15c432e97e68252140a1d0de10c1f2af850f3199d82acee7577ba9b51f315920aa156ca1065f3716d004fcb83c93ed8147             1437 Packages
+ f8f9a9f5b70f62e2c195ff679dd21796d21579e8ef9be87c4d12004bda572c7b047327b3ec291d5901e1d241697f7e485177449732799271c896001503948b74              192 Release

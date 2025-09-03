@@ -170,7 +170,7 @@ function commit() {
   else
     message="$1: $2"
   fi
-  echo git commit -m "\"$message\""
+  git commit -m "\"$message\""
 }
 
 function rebuild_md() {

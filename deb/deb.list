@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/trusted.gpg.d/asciimoth.gpg] https://repo.moth.contact/deb ./
