@@ -27,15 +27,19 @@ curl {{(ds "config").url}}/setup.sh | bash
 ## Content
 - [KEY.gpg]({{(ds "config").url}}/KEY.gpg) - author's key
 - [deb]({{(ds "config").url}}/deb) - deb repo
+{{- if (file.Exists "./deb/pool") -}}
 {{- range file.Walk "./deb/pool" -}}
 {{ if ne (filepath.Base .) "pool" -}}
 {{"\n\t- "}}[{{ filepath.Base . }}]({{(ds "config").url}}/{{.}})
 {{- end }}
 {{- end }}
+{{- end }}
 - [rpm]({{(ds "config").url}}/rpm) - rpm repo
+{{- if (file.Exists "./rpm/packages") -}}
 {{- range file.Walk "./rpm/packages" -}}
 {{ if ne (filepath.Base .) "packages" -}}
 {{"\n\t- "}}[{{ filepath.Base . }}]({{(ds "config").url}}/{{.}})
+{{- end }}
 {{- end }}
 {{- end }}
 
