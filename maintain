@@ -9,7 +9,7 @@ function enter_env() {
     exit 1
   fi
   export MAINTAIN_RECURSION="true"
-  nix develop "$BASE_DIR" --command "$BASE_DIR/maintain" $@
+  nix develop "$BASE_DIR" --command "$BASE_DIR/maintain" "$@"
   exit $?
 }
 
@@ -18,12 +18,12 @@ function check_env() {
   for d in ${deps[@]}; do
     if ! command -v "$d" >/dev/null 2>&1
     then
-      enter_env $@
+      enter_env "$@"
     fi
   done
 }
 
-check_env $@
+check_env "$@"
 
 # Read config
 GPG_FPR="$(cat "$BASE_DIR/config.yaml" | yq -r .gpg)"
@@ -254,7 +254,7 @@ function save() {
   rebuild_setup
   rebuild_readme
   echo "Commiting..."
-  commit $@
+  commit "$@"
   echo "Pushing..."
   git push
 }
@@ -265,13 +265,13 @@ function clean() {
 
 function debug() {
   if [ ! "$#" -gt 0 ]; then
-    help $@
+    help "$@"
     exit 1
   fi
   case "$1" in
     "help")
       shift
-      help $@
+      help "$@"
       exit 0
       ;;
     "clean")
@@ -281,17 +281,17 @@ function debug() {
       ;;
     "conf")
       shift
-      conf $@
+      conf "$@"
       exit 0
       ;;
     "gitstat")
       shift
-      gitstat $@
+      gitstat "$@"
       exit 0
       ;;
     "commit")
       shift
-      commit $@
+      commit "$@"
       exit 0
       ;;
     "rebuild-deb")
@@ -324,43 +324,43 @@ function debug() {
       exit 0
       ;;
   esac
-  help $@
+  help "$@"
   exit 1
 }
 
 if [ ! "$#" -gt 0 ]; then
-  help $@
+  help "$@"
   exit 1
 fi
 
 case "$1" in
   "help")
     shift
-    help $@
+    help "$@"
     exit 0
     ;;
   "add")
     shift
-    add $@
+    add "$@"
     exit 0
     ;;
   "remove")
     shift
-    remove $@
+    remove "$@"
     exit 0
     ;;
   "save")
     shift
-    save $@
+    save "$@"
     exit 0
     ;;
   "debug")
     shift
-    debug $@
+    debug "$@"
     exit 0
     ;;
 esac
 
-help $@
+help "$@"
 exit 1
 
