@@ -1,0 +1,64 @@
+Package: version
+Version: 0.1.0
+Architecture: i386
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 3982
+Filename: pool/version-i386.deb
+Size: 1701958
+MD5sum: bdec5f50ee6e59bfae0ffe785a6f89b7
+SHA1: 4dca5fd64c636a6224ac783c80a1adfe2990ab09
+SHA256: 098b6bc1b6484e9957e4c739283a4735fbbed92a625cf16dd1a1862e59b3f0ba
+Section: default
+Priority: optional
+Homepage: https://github.com/asciimoth/version
+Description: Multi-source semantic version management tool
+License: Apache OR MIT
+
+Package: version
+Version: 0.1.0
+Architecture: amd64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 4202
+Filename: pool/version-amd64.deb
+Size: 1802584
+MD5sum: 75d4effd6ab9fa5d40664a6ceae2c71c
+SHA1: 367e31abf83da30f380cd5eb1d9d73f5b513f438
+SHA256: dbfad64b64214b671a889db1fc10b4a81d8193602b0221843147c340acb4e1f8
+Section: default
+Priority: optional
+Homepage: https://github.com/asciimoth/version
+Description: Multi-source semantic version management tool
+License: Apache OR MIT
+
+Package: version
+Version: 0.1.0
+Architecture: arm64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 4098
+Filename: pool/version-arm64.deb
+Size: 1638404
+MD5sum: cc4503ebfb9f13798374d5f11e190f79
+SHA1: fd4f81e9e84735d5ff1f2aad8405fe2805751c5b
+SHA256: 9093d1835c9ba2043913462c0aa5ebf774681ea82d4176bae65cdfc62400efe4
+Section: default
+Priority: optional
+Homepage: https://github.com/asciimoth/version
+Description: Multi-source semantic version management tool
+License: Apache OR MIT
+
+Package: version
+Version: 0.1.0
+Architecture: armhf
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 4162
+Filename: pool/version-armhf.deb
+Size: 1687694
+MD5sum: 5cf80c2eb4b9381b9a311aa491d660e7
+SHA1: 00c358788ed7cd52324e6bc2ecf53e3f7983cd6e
+SHA256: 02955f6c6dcf45a811074c62665739a3ca2090b0b0e0c3d5cf2db278163d2198
+Section: default
+Priority: optional
+Homepage: https://github.com/asciimoth/version
+Description: Multi-source semantic version management tool
+License: Apache OR MIT
+
