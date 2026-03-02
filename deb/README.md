@@ -21,6 +21,10 @@
 
 
 - [Packages](https://repo.moth.contact/deb/Packages) - packages index
+- [aaa-amd64.deb](https://repo.moth.contact/deb/pool/aaa-amd64.deb)
+- [aaa-arm64.deb](https://repo.moth.contact/deb/pool/aaa-arm64.deb)
+- [aaa-i386.deb](https://repo.moth.contact/deb/pool/aaa-i386.deb)
+- [aaa-riscv64gc.deb](https://repo.moth.contact/deb/pool/aaa-riscv64gc.deb)
 - [version-amd64.deb](https://repo.moth.contact/deb/pool/version-amd64.deb)
 - [version-arm64.deb](https://repo.moth.contact/deb/pool/version-arm64.deb)
 - [version-armhf.deb](https://repo.moth.contact/deb/pool/version-armhf.deb)

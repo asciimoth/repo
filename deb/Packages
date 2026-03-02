@@ -1,3 +1,71 @@
+Package: aaa
+Version: 2.0.1
+Architecture: amd64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 12813
+Depends: ffmpeg
+Filename: pool/aaa-amd64.deb
+Size: 5036026
+MD5sum: f5b454c9dc9367140d5995ce679164ce
+SHA1: 2104edda7460276950ff3d621d31d6050d52d9f2
+SHA256: a69d51fa831daa3d328fb14fc7771ed4f5115869139a3e242f37867919ccbb6f
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+License: GPL-3.0
+
+Package: aaa
+Version: 2.0.1
+Architecture: arm64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 12188
+Depends: ffmpeg
+Filename: pool/aaa-arm64.deb
+Size: 4894034
+MD5sum: a1ab2550b7980105834303eb88c58c34
+SHA1: 6160897fb59a015e4ccb6a220fd393aac8540791
+SHA256: 919e0212e346f04e9805b70e27b72fe5bce70dcb2d786c4bd5fee5dbed4cfa24
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+License: GPL-3.0
+
+Package: aaa
+Version: 2.0.1
+Architecture: i386
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 13164
+Depends: ffmpeg
+Filename: pool/aaa-i386.deb
+Size: 5228042
+MD5sum: 9be478aee096ff6e459c12d84fb3df85
+SHA1: c0ab4df866d928278d2d40d63cf124c19d0c724e
+SHA256: 6aff27493100a09582171bf7fc4351797b22710d6a4c0197afb906f7db099019
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+License: GPL-3.0
+
+Package: aaa
+Version: 2.0.1
+Architecture: riscv64gc
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 11817
+Depends: ffmpeg
+Filename: pool/aaa-riscv64gc.deb
+Size: 4870340
+MD5sum: d91d9860e54d1bd840faa35ffc180a47
+SHA1: 2d89caee28ac7f9fb48a0bd4f517ea6f1d6894f5
+SHA256: f1055110773b4ba4f78e5d7870545c9830c746f59c4431d762b543a181de04ca
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+License: GPL-3.0
+
 Package: version
 Version: 0.1.0
 Architecture: i386
