@@ -29,3 +29,6 @@
 - [version-arm64.deb](https://repo.moth.contact/deb/pool/version-arm64.deb)
 - [version-armhf.deb](https://repo.moth.contact/deb/pool/version-armhf.deb)
 - [version-i386.deb](https://repo.moth.contact/deb/pool/version-i386.deb)
+- [yggd-amd64.deb](https://repo.moth.contact/deb/pool/yggd-amd64.deb)
+- [yggd-arm64.deb](https://repo.moth.contact/deb/pool/yggd-arm64.deb)
+- [yggd-i386.deb](https://repo.moth.contact/deb/pool/yggd-i386.deb)

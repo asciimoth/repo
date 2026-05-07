@@ -29,3 +29,6 @@
 - [version-armv6hl.rpm](https://repo.moth.contact/rpm/packages/version-armv6hl.rpm)
 - [version-i386.rpm](https://repo.moth.contact/rpm/packages/version-i386.rpm)
 - [version-x86_64.rpm](https://repo.moth.contact/rpm/packages/version-x86_64.rpm)
+- [yggd-aarch64.rpm](https://repo.moth.contact/rpm/packages/yggd-aarch64.rpm)
+- [yggd-i386.rpm](https://repo.moth.contact/rpm/packages/yggd-i386.rpm)
+- [yggd-x86_64.rpm](https://repo.moth.contact/rpm/packages/yggd-x86_64.rpm)

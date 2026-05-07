@@ -68,22 +68,6 @@ License: GPL-3.0
 
 Package: version
 Version: 0.1.0
-Architecture: i386
-Maintainer: ASCII Moth <ascii@moth.contact>
-Installed-Size: 3982
-Filename: pool/version-i386.deb
-Size: 1701958
-MD5sum: bdec5f50ee6e59bfae0ffe785a6f89b7
-SHA1: 4dca5fd64c636a6224ac783c80a1adfe2990ab09
-SHA256: 098b6bc1b6484e9957e4c739283a4735fbbed92a625cf16dd1a1862e59b3f0ba
-Section: default
-Priority: optional
-Homepage: https://github.com/asciimoth/version
-Description: Multi-source semantic version management tool
-License: Apache OR MIT
-
-Package: version
-Version: 0.1.0
 Architecture: amd64
 Maintainer: ASCII Moth <ascii@moth.contact>
 Installed-Size: 4202
@@ -129,4 +113,68 @@ Priority: optional
 Homepage: https://github.com/asciimoth/version
 Description: Multi-source semantic version management tool
 License: Apache OR MIT
+
+Package: version
+Version: 0.1.0
+Architecture: i386
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 3982
+Filename: pool/version-i386.deb
+Size: 1701958
+MD5sum: bdec5f50ee6e59bfae0ffe785a6f89b7
+SHA1: 4dca5fd64c636a6224ac783c80a1adfe2990ab09
+SHA256: 098b6bc1b6484e9957e4c739283a4735fbbed92a625cf16dd1a1862e59b3f0ba
+Section: default
+Priority: optional
+Homepage: https://github.com/asciimoth/version
+Description: Multi-source semantic version management tool
+License: Apache OR MIT
+
+Package: yggd
+Version: 0.1.3
+Architecture: amd64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 24284
+Filename: pool/yggd-amd64.deb
+Size: 9999184
+MD5sum: 0763bb21681f0446e2d18183b8e8d7bb
+SHA1: dd49a00e9191cacd02c2c7e0d0c1241966747191
+SHA256: 52099d4bdfe8ae15a6557930200d6fd2543e05d5c893a33c2f9e158407ce1d82
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/ygg
+Description: Yggdrasil network daemon and command line tools
+License: LGPL-3.0
+
+Package: yggd
+Version: 0.1.3
+Architecture: i386
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 23060
+Filename: pool/yggd-i386.deb
+Size: 9619852
+MD5sum: a1d9e2050b9ed97d12c3e2c8a67934af
+SHA1: facacc32a84743b452fa6e2f92569a23e40b2951
+SHA256: dbdb7e13033d4ff0139bf3cbf4c36df7618ca16c3a349a4af9e015a3cbd26afe
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/ygg
+Description: Yggdrasil network daemon and command line tools
+License: LGPL-3.0
+
+Package: yggd
+Version: 0.1.3
+Architecture: arm64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 22784
+Filename: pool/yggd-arm64.deb
+Size: 9137870
+MD5sum: c3513f285b47107c04887d4c82c2cff3
+SHA1: a53f83bcab13db938c9d29b1232ad58b4f34a496
+SHA256: 0ed581265f2512cfaecd0a409db49dcbf6fb417551b3d7476ec4d9aecca0801d
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/ygg
+Description: Yggdrasil network daemon and command line tools
+License: LGPL-3.0
 

@@ -35,6 +35,9 @@ curl https://repo.moth.contact/setup.sh | bash
 	- [version-arm64.deb](https://repo.moth.contact/deb/pool/version-arm64.deb)
 	- [version-armhf.deb](https://repo.moth.contact/deb/pool/version-armhf.deb)
 	- [version-i386.deb](https://repo.moth.contact/deb/pool/version-i386.deb)
+	- [yggd-amd64.deb](https://repo.moth.contact/deb/pool/yggd-amd64.deb)
+	- [yggd-arm64.deb](https://repo.moth.contact/deb/pool/yggd-arm64.deb)
+	- [yggd-i386.deb](https://repo.moth.contact/deb/pool/yggd-i386.deb)
 - [rpm](https://repo.moth.contact/rpm) - rpm repo
 	- [aaa-aarch64.rpm](https://repo.moth.contact/rpm/packages/aaa-aarch64.rpm)
 	- [aaa-i386.rpm](https://repo.moth.contact/rpm/packages/aaa-i386.rpm)
@@ -44,4 +47,7 @@ curl https://repo.moth.contact/setup.sh | bash
 	- [version-armv6hl.rpm](https://repo.moth.contact/rpm/packages/version-armv6hl.rpm)
 	- [version-i386.rpm](https://repo.moth.contact/rpm/packages/version-i386.rpm)
 	- [version-x86_64.rpm](https://repo.moth.contact/rpm/packages/version-x86_64.rpm)
+	- [yggd-aarch64.rpm](https://repo.moth.contact/rpm/packages/yggd-aarch64.rpm)
+	- [yggd-i386.rpm](https://repo.moth.contact/rpm/packages/yggd-i386.rpm)
+	- [yggd-x86_64.rpm](https://repo.moth.contact/rpm/packages/yggd-x86_64.rpm)
 
