@@ -66,6 +66,52 @@ Homepage: https://github.com/asciimoth/aaa
 Description: Swiss Army knife for animated ascii art
 License: GPL-3.0
 
+Package: pmark
+Version: 0.1.1
+Architecture: amd64
+Maintainer: asciimoth
+Installed-Size: 7940
+Filename: pool/pmark-amd64amd64v1.deb
+Size: 3379604
+MD5sum: 6d7b78bf31c757f7261f2dce4319396f
+SHA1: 26b04031d8823fb6cde449ac5e77b1af37e40911
+SHA256: 25664b0227c171f0929cbe8f081f6262c2ed565080453d7351facef1034f5e4e
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/p-mark
+Description: Tool for tagging processes for split routing and other purposes
+Architecture-Variant: amd64v1
+
+Package: pmark
+Version: 0.1.1
+Architecture: arm64
+Maintainer: asciimoth
+Installed-Size: 7360
+Filename: pool/pmark-arm64.deb
+Size: 3053432
+MD5sum: 088815f56ba459c0f15e06f256359abf
+SHA1: bf3c52e0de057a0852f5e171674211812a1b856a
+SHA256: bf459796c91ee01a55af969fe3316fb38341304d7ca16a78061fe1e575373d6b
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/p-mark
+Description: Tool for tagging processes for split routing and other purposes
+
+Package: pmark
+Version: 0.1.1
+Architecture: i386
+Maintainer: asciimoth
+Installed-Size: 7676
+Filename: pool/pmark-i386.deb
+Size: 3281082
+MD5sum: a78ad7c40b792c5e8102726c291212e9
+SHA1: 07832944fb71a0284681eb55d0227d66bfc27a1d
+SHA256: 6a4efe67504d6e8275bd23b2b7be0271223271f8d8318c339d1a40c8c15b9362
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/p-mark
+Description: Tool for tagging processes for split routing and other purposes
+
 Package: version
 Version: 0.1.0
 Architecture: amd64
