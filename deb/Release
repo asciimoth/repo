@@ -1,20 +1,20 @@
 Architectures: all
 Codename: stable
 Components: main
-Date: Mon, 08 Jun 2026 15:18:56 +0000
+Date: Fri, 12 Jun 2026 16:19:59 +0000
 Description: ASCII Moth's personal APT and RPM repo
 Label: asciimoth
 Origin: asciimoth
 Suite: stable
 MD5Sum:
- 1b4823137f10ad88db3f5b7b769a0edc             6719 Packages
- 8a051ee518dc62db29ed017f541c22a4              192 Release
+ 4795e89509d40eccb1c356b0df1b7191             8196 Packages
+ a92f431ffc9016fa7c253c386e00a72d              192 Release
 SHA1:
- 71f750cd2773719b0208e0f5b43b1c1fe7b2b9ec             6719 Packages
- bf007ffbb6c2e43bde3e4b335fb038ea13787eb4              192 Release
+ 33f87bad16f4a71d84f8a8e5c409b639a0228c16             8196 Packages
+ 1dcf3a0975c71f1194b26593c6aca6405979109f              192 Release
 SHA256:
- d8c660262debf3c7b2a210a45fa7bbbec543c42e7d098d1b1ef5f36588cb918c             6719 Packages
- 7c4f067b781d8b63d1bc2b9a65371acab39259d82ceae6b0e8a563a3547581bd              192 Release
+ 646105507481780182d1aafd924553d708c05334291be10cb2d06afbba35be1e             8196 Packages
+ 8842078c542ac1fea1e5edb36e4f5919dd1ca226ad644b75fc133ea4b2b8d7e1              192 Release
 SHA512:
- bad0e60f6a6350548ee0fccd187b03ff07c5ae9997df7e8572618bc9c4ef6cb7ee0bd8b6a3e4f32541103d359e1edc611f08e67dfdc3fa1fff70a65f0491231e             6719 Packages
- 299714a4de20a5cd17d8fa49c69a49cdb2cc4f82c2a450155a017ac9ce58fa7730f64478dfa8380f347f0ba1b35dd95d117ef24ca1b614c1e231959006f6d3f1              192 Release
+ acaebce4c33aa870818fc6af59d56ed29debc1c0d3b56f8db09eca8a5181388f2bb96b9d0c98b73b31ef56136c6498441c746b5a920f86856e713d2be3c051a1             8196 Packages
+ 8248423f6457ddc2df13487b52f0db7bbe33a693f3f8c05e7a912511c9944b2e5dd7051e95d5174083389c35650686cdb939eb5e27bf602e8c33180e8773c1fe              192 Release

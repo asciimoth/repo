@@ -66,6 +66,54 @@ Homepage: https://github.com/asciimoth/aaa
 Description: Swiss Army knife for animated ascii art
 License: GPL-3.0
 
+Package: killswitch
+Version: 0.1.1
+Architecture: i386
+Maintainer: asciimoth
+Installed-Size: 17644
+Filename: pool/killswitch-i386.deb
+Size: 7840036
+MD5sum: dd4f76ac09471a1918389de014845ba2
+SHA1: 8959c6401e27c54977f87a2d251dbaeef496e4cf
+SHA256: bc42f398523277904be5f413e64b444025f509cc709039d8acb1f869bc57167e
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/killswitch
+Description: Linux eBPF network kill switch for vpn apps an beyond
+License: MIT OR GPL-3.0-or-later
+
+Package: killswitch
+Version: 0.1.1
+Architecture: arm64
+Maintainer: asciimoth
+Installed-Size: 17536
+Filename: pool/killswitch-arm64.deb
+Size: 7488324
+MD5sum: f92e8dfa91c7e3aab7a1e68fea830397
+SHA1: 909d6fde69ca2d98d322fbb69f235c4c6163cb3c
+SHA256: 1da73c5ad22b07f5c25285519aeafbf507cdfaa2aa471b87cb27a6393c47dbe1
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/killswitch
+Description: Linux eBPF network kill switch for vpn apps an beyond
+License: MIT OR GPL-3.0-or-later
+
+Package: killswitch
+Version: 0.1.1
+Architecture: amd64
+Maintainer: asciimoth
+Installed-Size: 18492
+Filename: pool/killswitch-amd64.deb
+Size: 8152740
+MD5sum: 23a78d51ed4e0616c490a7c60c73f1da
+SHA1: d9a523b17b31a8ed29adf50ea3e45f9f0654f05f
+SHA256: cc0911f2f20dba9400459a341c826faa8cf868951373ec9ba6b3aaadcaae7c75
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/killswitch
+Description: Linux eBPF network kill switch for vpn apps an beyond
+License: MIT OR GPL-3.0-or-later
+
 Package: pmark
 Version: 0.1.1
 Architecture: amd64
