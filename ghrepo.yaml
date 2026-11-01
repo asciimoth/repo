@@ -9,16 +9,23 @@ apt:
     architectures:
         - amd64
         - arm64
+        - i386
+        - armhf
+        - riscv64gc
 rpm:
     id: ghrepo
     name: Packages
     architectures:
         - x86_64
         - aarch64
+        - i386
+        - armv6hl
+        - riscv64gc
     package_signature: metadata-only
 downloads:
     source_hosts:
         - github.com
+        - raw.githubusercontent.com
     redirect_hosts:
         - release-assets.githubusercontent.com
         - objects.githubusercontent.com

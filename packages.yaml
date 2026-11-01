@@ -1,2 +1,563 @@
 schema: 1
-packages: []
+packages:
+    - path: deb/pool/aaa_2.0.1_amd64_a69d51fa831d.deb
+      url: https://github.com/asciimoth/aaa/releases/download/2.0.1/aaa_2.0.1_linux_amd64.deb
+      comment: Swiss Army knife for animated ascii art
+      source_url: https://github.com/asciimoth/aaa
+      tags:
+        - 3a
+        - animated-ascii-art
+        - ascii
+        - ascii-art
+        - ascii-graphics
+        - cli
+        - command-line
+        - fetch
+        - rendering
+        - rust
+        - rust-lang
+        - sysfetch
+        - unicode
+      sha256: a69d51fa831daa3d328fb14fc7771ed4f5115869139a3e242f37867919ccbb6f
+      size: 5036026
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: aaa
+        version: 2.0.1
+        architecture: amd64
+    - path: deb/pool/aaa_2.0.1_arm64_919e0212e346.deb
+      url: https://github.com/asciimoth/aaa/releases/download/2.0.1/aaa_2.0.1_linux_arm64.deb
+      comment: Swiss Army knife for animated ascii art
+      source_url: https://github.com/asciimoth/aaa
+      tags:
+        - 3a
+        - animated-ascii-art
+        - ascii
+        - ascii-art
+        - ascii-graphics
+        - cli
+        - command-line
+        - fetch
+        - rendering
+        - rust
+        - rust-lang
+        - sysfetch
+        - unicode
+      sha256: 919e0212e346f04e9805b70e27b72fe5bce70dcb2d786c4bd5fee5dbed4cfa24
+      size: 4894034
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: aaa
+        version: 2.0.1
+        architecture: arm64
+    - path: deb/pool/aaa_2.0.1_i386_6aff27493100.deb
+      url: https://github.com/asciimoth/aaa/releases/download/2.0.1/aaa_2.0.1_linux_386.deb
+      comment: Swiss Army knife for animated ascii art
+      source_url: https://github.com/asciimoth/aaa
+      tags:
+        - 3a
+        - animated-ascii-art
+        - ascii
+        - ascii-art
+        - ascii-graphics
+        - cli
+        - command-line
+        - fetch
+        - rendering
+        - rust
+        - rust-lang
+        - sysfetch
+        - unicode
+      sha256: 6aff27493100a09582171bf7fc4351797b22710d6a4c0197afb906f7db099019
+      size: 5228042
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: aaa
+        version: 2.0.1
+        architecture: i386
+    - path: deb/pool/aaa_2.0.1_riscv64gc_f1055110773b.deb
+      url: https://github.com/asciimoth/aaa/releases/download/2.0.1/aaa_2.0.1_linux_riscv64gc.deb
+      comment: Swiss Army knife for animated ascii art
+      source_url: https://github.com/asciimoth/aaa
+      tags:
+        - 3a
+        - animated-ascii-art
+        - ascii
+        - ascii-art
+        - ascii-graphics
+        - cli
+        - command-line
+        - fetch
+        - rendering
+        - rust
+        - rust-lang
+        - sysfetch
+        - unicode
+      sha256: f1055110773b4ba4f78e5d7870545c9830c746f59c4431d762b543a181de04ca
+      size: 4870340
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: aaa
+        version: 2.0.1
+        architecture: riscv64gc
+    - path: deb/pool/killswitch_0.1.1_amd64_cc0911f2f20d.deb
+      url: https://github.com/asciimoth/killswitch/releases/download/v0.1.1/killswitch_0.1.1_linux_amd64.deb
+      comment: Linux eBPF network kill switch for vpn apps an beyond
+      source_url: https://github.com/asciimoth/killswitch
+      tags:
+        - ebpf
+        - egress-filtering
+        - firewall
+        - fwmark
+        - go
+        - linux
+        - linux-networking
+        - network-security
+        - so-mark
+        - socks-proxy
+        - vpn-killswitch
+      sha256: cc0911f2f20dba9400459a341c826faa8cf868951373ec9ba6b3aaadcaae7c75
+      size: 8152740
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: killswitch
+        version: 0.1.1
+        architecture: amd64
+    - path: deb/pool/killswitch_0.1.1_arm64_1da73c5ad22b.deb
+      url: https://github.com/asciimoth/killswitch/releases/download/v0.1.1/killswitch_0.1.1_linux_arm64.deb
+      comment: Linux eBPF network kill switch for vpn apps an beyond
+      source_url: https://github.com/asciimoth/killswitch
+      tags:
+        - ebpf
+        - egress-filtering
+        - firewall
+        - fwmark
+        - go
+        - linux
+        - linux-networking
+        - network-security
+        - so-mark
+        - socks-proxy
+        - vpn-killswitch
+      sha256: 1da73c5ad22b07f5c25285519aeafbf507cdfaa2aa471b87cb27a6393c47dbe1
+      size: 7488324
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: killswitch
+        version: 0.1.1
+        architecture: arm64
+    - path: deb/pool/killswitch_0.1.1_i386_bc42f3985232.deb
+      url: https://github.com/asciimoth/killswitch/releases/download/v0.1.1/killswitch_0.1.1_linux_386.deb
+      comment: Linux eBPF network kill switch for vpn apps an beyond
+      source_url: https://github.com/asciimoth/killswitch
+      tags:
+        - ebpf
+        - egress-filtering
+        - firewall
+        - fwmark
+        - go
+        - linux
+        - linux-networking
+        - network-security
+        - so-mark
+        - socks-proxy
+        - vpn-killswitch
+      sha256: bc42f398523277904be5f413e64b444025f509cc709039d8acb1f869bc57167e
+      size: 7840036
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: killswitch
+        version: 0.1.1
+        architecture: i386
+    - path: deb/pool/pmark_0.1.1_amd64_25664b0227c1.deb
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/deb/pool/pmark-amd64amd64v1.deb
+      sha256: 25664b0227c171f0929cbe8f081f6262c2ed565080453d7351facef1034f5e4e
+      size: 3379604
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: pmark
+        version: 0.1.1
+        architecture: amd64
+    - path: deb/pool/pmark_0.1.1_arm64_bf459796c91e.deb
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/deb/pool/pmark-arm64.deb
+      sha256: bf459796c91ee01a55af969fe3316fb38341304d7ca16a78061fe1e575373d6b
+      size: 3053432
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: pmark
+        version: 0.1.1
+        architecture: arm64
+    - path: deb/pool/pmark_0.1.1_i386_6a4efe67504d.deb
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/deb/pool/pmark-i386.deb
+      sha256: 6a4efe67504d6e8275bd23b2b7be0271223271f8d8318c339d1a40c8c15b9362
+      size: 3281082
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: pmark
+        version: 0.1.1
+        architecture: i386
+    - path: deb/pool/version_0.1.0_amd64_dbfad64b6421.deb
+      url: https://github.com/asciimoth/version/releases/download/v0.1.0/version_0.1.0_linux_amd64.deb
+      comment: Multi-source semantic version management tool
+      source_url: https://github.com/asciimoth/version
+      sha256: dbfad64b64214b671a889db1fc10b4a81d8193602b0221843147c340acb4e1f8
+      size: 1802584
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: version
+        version: 0.1.0
+        architecture: amd64
+    - path: deb/pool/version_0.1.0_arm64_9093d1835c9b.deb
+      url: https://github.com/asciimoth/version/releases/download/v0.1.0/version_0.1.0_linux_arm64.deb
+      comment: Multi-source semantic version management tool
+      source_url: https://github.com/asciimoth/version
+      sha256: 9093d1835c9ba2043913462c0aa5ebf774681ea82d4176bae65cdfc62400efe4
+      size: 1638404
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: version
+        version: 0.1.0
+        architecture: arm64
+    - path: deb/pool/version_0.1.0_armhf_02955f6c6dcf.deb
+      url: https://github.com/asciimoth/version/releases/download/v0.1.0/version_0.1.0_linux_armv6.deb
+      comment: Multi-source semantic version management tool
+      source_url: https://github.com/asciimoth/version
+      sha256: 02955f6c6dcf45a811074c62665739a3ca2090b0b0e0c3d5cf2db278163d2198
+      size: 1687694
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: version
+        version: 0.1.0
+        architecture: armhf
+    - path: deb/pool/version_0.1.0_i386_098b6bc1b648.deb
+      url: https://github.com/asciimoth/version/releases/download/v0.1.0/version_0.1.0_linux_386.deb
+      comment: Multi-source semantic version management tool
+      source_url: https://github.com/asciimoth/version
+      sha256: 098b6bc1b6484e9957e4c739283a4735fbbed92a625cf16dd1a1862e59b3f0ba
+      size: 1701958
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: version
+        version: 0.1.0
+        architecture: i386
+    - path: deb/pool/yggd_0.1.3_amd64_52099d4bdfe8.deb
+      url: https://github.com/asciimoth/ygg/releases/download/v0.1.3/yggd_0.1.3_linux_amd64.deb
+      comment: alternative yggdrasil mesh network implementation
+      source_url: https://github.com/asciimoth/ygg
+      tags:
+        - decentralization
+        - e2e-encryption
+        - gonnect
+        - ipv6
+        - mesh
+        - mesh-networks
+        - routing-algorithm
+        - routing-mesh
+        - spanning-tree
+        - yggdrasil-network
+      sha256: 52099d4bdfe8ae15a6557930200d6fd2543e05d5c893a33c2f9e158407ce1d82
+      size: 9999184
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: yggd
+        version: 0.1.3
+        architecture: amd64
+    - path: deb/pool/yggd_0.1.3_arm64_0ed581265f25.deb
+      url: https://github.com/asciimoth/ygg/releases/download/v0.1.3/yggd_0.1.3_linux_arm64.deb
+      comment: alternative yggdrasil mesh network implementation
+      source_url: https://github.com/asciimoth/ygg
+      tags:
+        - decentralization
+        - e2e-encryption
+        - gonnect
+        - ipv6
+        - mesh
+        - mesh-networks
+        - routing-algorithm
+        - routing-mesh
+        - spanning-tree
+        - yggdrasil-network
+      sha256: 0ed581265f2512cfaecd0a409db49dcbf6fb417551b3d7476ec4d9aecca0801d
+      size: 9137870
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: yggd
+        version: 0.1.3
+        architecture: arm64
+    - path: deb/pool/yggd_0.1.3_i386_dbdb7e13033d.deb
+      url: https://github.com/asciimoth/ygg/releases/download/v0.1.3/yggd_0.1.3_linux_386.deb
+      comment: alternative yggdrasil mesh network implementation
+      source_url: https://github.com/asciimoth/ygg
+      tags:
+        - decentralization
+        - e2e-encryption
+        - gonnect
+        - ipv6
+        - mesh
+        - mesh-networks
+        - routing-algorithm
+        - routing-mesh
+        - spanning-tree
+        - yggdrasil-network
+      sha256: dbdb7e13033d4ff0139bf3cbf4c36df7618ca16c3a349a4af9e015a3cbd26afe
+      size: 9619852
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: yggd
+        version: 0.1.3
+        architecture: i386
+    - path: rpm/packages/aaa-0_2.0.1-1.aarch64.de69c7afb465.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/aaa-aarch64.rpm
+      sha256: de69c7afb465e6967da7175ab5a1a69e9e894b08f9a93fb330d47db04a5c15f7
+      size: 4995003
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: aaa
+        epoch: "0"
+        version: 2.0.1
+        release: "1"
+        architecture: aarch64
+    - path: rpm/packages/aaa-0_2.0.1-1.i386.8828a4bb441f.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/aaa-i386.rpm
+      sha256: 8828a4bb441f39bf9fcba19e1b7cbdcc59e341145896e2ac8d2d8f81f81ff0be
+      size: 5391782
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: aaa
+        epoch: "0"
+        version: 2.0.1
+        release: "1"
+        architecture: i386
+    - path: rpm/packages/aaa-0_2.0.1-1.riscv64gc.b916f0cadacd.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/aaa-riscv64gc.rpm
+      sha256: b916f0cadacd48e61edc315aab678043371a531f9a5005e2f5bd719757302762
+      size: 5012999
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: aaa
+        epoch: "0"
+        version: 2.0.1
+        release: "1"
+        architecture: riscv64gc
+    - path: rpm/packages/aaa-0_2.0.1-1.x86_64.53ca6e3960f6.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/aaa-x86_64.rpm
+      sha256: 53ca6e3960f6dd0543474b3e3aef5815e50a9364d788e5cb9e1e28f9f9665632
+      size: 5215847
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: aaa
+        epoch: "0"
+        version: 2.0.1
+        release: "1"
+        architecture: x86_64
+    - path: rpm/packages/killswitch-0_0.1.2-1.aarch64.4543ee0a16e7.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/killswitch-aarch64.rpm
+      sha256: 4543ee0a16e74cb79f252c098b9946ed5f827e2e2aa6571d58ad8b19330c627a
+      size: 7664405
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: killswitch
+        epoch: "0"
+        version: 0.1.2
+        release: "1"
+        architecture: aarch64
+    - path: rpm/packages/killswitch-0_0.1.2-1.i386.785aef655d04.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/killswitch-i386.rpm
+      sha256: 785aef655d04c3912166e54a1c2f90aa7096f26c953c28c0baef760b98d6f692
+      size: 8080020
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: killswitch
+        epoch: "0"
+        version: 0.1.2
+        release: "1"
+        architecture: i386
+    - path: rpm/packages/killswitch-0_0.1.2-1.x86_64.ba2117a58b64.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/killswitch-x86_64.rpm
+      sha256: ba2117a58b64806244675ab58cb8602e60c4f7f7beac8f2e4e509328cc56e3b0
+      size: 8391800
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: killswitch
+        epoch: "0"
+        version: 0.1.2
+        release: "1"
+        architecture: x86_64
+    - path: rpm/packages/pmark-0_0.1.2-1.aarch64.ff6355f3918f.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/pmark-aarch64.rpm
+      sha256: ff6355f3918fe6f3f5366c31bc2eb394be92798c7a32101e703b87f9ea950442
+      size: 3039574
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: pmark
+        epoch: "0"
+        version: 0.1.2
+        release: "1"
+        architecture: aarch64
+    - path: rpm/packages/pmark-0_0.1.2-1.i386.a6d7f3162a9f.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/pmark-i386.rpm
+      sha256: a6d7f3162a9f86a3a87b4370e8dad3c3464d13d82e09e0a1ef93b2b251de0266
+      size: 3272407
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: pmark
+        epoch: "0"
+        version: 0.1.2
+        release: "1"
+        architecture: i386
+    - path: rpm/packages/pmark-0_0.1.2-1.x86_64.379679dc2691.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/pmark-x86_64.rpm
+      sha256: 379679dc269150293467025d206b357ca702f061702f26448f3663fd5623471d
+      size: 3373257
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: pmark
+        epoch: "0"
+        version: 0.1.2
+        release: "1"
+        architecture: x86_64
+    - path: rpm/packages/version-0_0.1.0-1.aarch64.859d18e35c3e.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/version-aarch64.rpm
+      sha256: 859d18e35c3e163c364131b1ca5a0cb52de87ce183375362310fea20aff9d2cd
+      size: 1679247
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: version
+        epoch: "0"
+        version: 0.1.0
+        release: "1"
+        architecture: aarch64
+    - path: rpm/packages/version-0_0.1.0-1.armv6hl.a4a10d0cbaec.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/version-armv6hl.rpm
+      sha256: a4a10d0cbaec82d198edc582566869a37c016623be78a67236ab39bc7fc57776
+      size: 1725664
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: version
+        epoch: "0"
+        version: 0.1.0
+        release: "1"
+        architecture: armv6hl
+    - path: rpm/packages/version-0_0.1.0-1.i386.629eadcafc48.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/version-i386.rpm
+      sha256: 629eadcafc48c16e460e014f2fea354dee86a26b50ce8fe004b48e5513f2830e
+      size: 1746992
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: version
+        epoch: "0"
+        version: 0.1.0
+        release: "1"
+        architecture: i386
+    - path: rpm/packages/version-0_0.1.0-1.x86_64.c6259f50d809.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/version-x86_64.rpm
+      sha256: c6259f50d809bd58a6f4ba510c9998fe908d94598316c81c403528f2f616efd7
+      size: 1853400
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: version
+        epoch: "0"
+        version: 0.1.0
+        release: "1"
+        architecture: x86_64
+    - path: rpm/packages/yggd-0_0.2.0-1.aarch64.b83e9712dcc4.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/yggd-aarch64.rpm
+      sha256: b83e9712dcc4486a8c3c3da80d87e1e84034e7e7afa5da44f9d41edd5b6ba7b8
+      size: 9378346
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: yggd
+        epoch: "0"
+        version: 0.2.0
+        release: "1"
+        architecture: aarch64
+    - path: rpm/packages/yggd-0_0.2.0-1.i386.3adc51effca9.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/yggd-i386.rpm
+      sha256: 3adc51effca98c1a3a4ef2d894d0944dc9b375fd78466ed1b1b065cc137c7c33
+      size: 9904148
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: yggd
+        epoch: "0"
+        version: 0.2.0
+        release: "1"
+        architecture: i386
+    - path: rpm/packages/yggd-0_0.2.0-1.x86_64.10698ea2db58.rpm
+      url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/yggd-x86_64.rpm
+      sha256: 10698ea2db5820877ec8bfbe90b1a03b659095a45a4c9d60eff25524c4eae1e4
+      size: 10314808
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: yggd
+        epoch: "0"
+        version: 0.2.0
+        release: "1"
+        architecture: x86_64
