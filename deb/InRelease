@@ -1,0 +1,22 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Origin: ghrepo
+Label: Packages
+Suite: stable
+Codename: stable
+Date: Sun, 01 Nov 2026 04:52:43 UTC
+Components: main
+Architectures: amd64 arm64
+Acquire-By-Hash: no
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 Packages
+ 30e6fa98fb48c2b132824d1ac5e2243c0be9e9082ff32598d34d7687ca7f6c7f 23 Packages.gz
+
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCaubFmwAKCRC2czOfKVWM
+NX7MAQDyU1VZYKL/hPJYW+HbFAoD/XEJ8e95mWyArtzcdv0qFgD7B/UodlZ0QoxU
+LsDNTZXJ+LcO0kgiBoZHSjAsnyG3Lw0=
+=GiL6
+-----END PGP SIGNATURE-----

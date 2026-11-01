@@ -1,0 +1,67 @@
+name: Pages
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+concurrency:
+  group: pages-master
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build site with signed ghrepo release
+        run: |
+          set -euo pipefail
+          release=$(curl -fsSL --retry 5 -H 'Authorization: Bearer ${{ github.token }}' https://api.github.com/repos/asciimoth/ghrepo/releases/latest)
+          asset_url=$(jq -er '[.assets[] | select(.name | startswith("ghrepo_") and endswith("_linux_amd64.tar.gz"))] | if length == 1 then .[0].browser_download_url else error("expected one Linux amd64 archive") end' <<<"$release")
+          work_dir=$(mktemp -d)
+          curl -fsSL --retry 5 -o "$work_dir/ghrepo.tar.gz" "$asset_url"
+          curl -fsSL --retry 5 -o "$work_dir/ghrepo.tar.gz.sig" "$asset_url.sig"
+          cat > "$work_dir/release-key.asc" <<'GHREPO_RELEASE_KEY'
+          -----BEGIN PGP PUBLIC KEY BLOCK-----
+          
+          mDMEZLBs3xYJKwYBBAHaRw8BAQdAvQ1PVijYCri1r7qn9RPlLTycvOr9fLQPq8Ph
+          5pN+1H60J0FTQ0lJIE1vdGggKF4wdzBeKSA8YXNjaWlAbW90aC5jb250YWN0PoiQ
+          BBMWCAA4FiEExchGWMz9fo5x3ukzrzrlT8OjXJ8FAmSwbN8CGwEFCwkIBwIGFQoJ
+          CAsCBBYCAwECHgECF4AACgkQrzrlT8OjXJ85bAEAr6+pe3ExhiCaPj9YJMsl4QPw
+          u3Ni6o9hMQBIpffOEusBAJfYv2nUxUoHV1IXZeHpAKRmrsuD7ORlNfjDsfcoapoA
+          uDMEZLBtFhYJKwYBBAHaRw8BAQdAmuoq5NgrBYZn6qXqchQOYexzEWS/1wrc/48N
+          0uC+8VOI7wQYFggAIBYhBMXIRljM/X6Ocd7pM6865U/Do1yfBQJksG0WAhsCAIEJ
+          EK865U/Do1yfdiAEGRYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCZLBtFgAK
+          CRC2czOfKVWMNdfCAP4zvjZ1IjIbexFftopgkyUNgkZRNgYvIJMpnEw1vt0CrQEA
+          va4DkaGUkFAR3BNh+ZpSXJrmOPv7oAoYpW5fiwtwqgLPBwEAv6KwvYvh/V8M9Mtk
+          sVNsSTfuTOB+evTlJePr8ZwI9RkBALc0MQBvGQ4sX2UQOlNEJs5fT57we1W0dFaV
+          ux4BS2YBuDgEZLBtNxIKKwYBBAGXVQEFAQEHQGHOJSoGpSRuGCna5ogFq7dLgZax
+          8+TVf5S4ue9h/ysRAwEIB4h4BBgWCAAgFiEExchGWMz9fo5x3ukzrzrlT8OjXJ8F
+          AmSwbTcCGwwACgkQrzrlT8OjXJ8x7AD+N8b1rEGw0qIZN+Nq8fmQo4mpOAwoGS4g
+          DBVTxFUmhpkBANhd9sJ/akLVfj9qYFpQqVe2z5/eQQSrRLbQUTv2OM8FuDMEZLBt
+          XhYJKwYBBAHaRw8BAQdApj4HKiGXBF5qmc+iWwb6JW4rwKPRV75Vfs67UIm9GUWI
+          eAQYFggAIBYhBMXIRljM/X6Ocd7pM6865U/Do1yfBQJksG1eAhsgAAoJEK865U/D
+          o1yf/AAA/1mKVrWxdWg+Is0S9/ByUvCLGcOHZj825fABtQrNt9c0AP4nLBcBFCQ+
+          CTWc8jhBerQyReyfu+sIF9g5OfPN1AtlDw==
+          =zGBE
+          -----END PGP PUBLIC KEY BLOCK-----
+          GHREPO_RELEASE_KEY
+          gpg --batch --dearmor --output "$work_dir/release-key.gpg" "$work_dir/release-key.asc"
+          gpgv --keyring "$work_dir/release-key.gpg" "$work_dir/ghrepo.tar.gz.sig" "$work_dir/ghrepo.tar.gz"
+          tar -xzf "$work_dir/ghrepo.tar.gz" -C "$work_dir" ghrepo
+          "$work_dir/ghrepo" site-build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

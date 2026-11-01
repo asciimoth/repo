@@ -1,0 +1,7 @@
+[{{.Repository.RPM.ID}}]
+name={{.Repository.RPM.Name}}
+baseurl={{.BaseURL}}/rpm/
+enabled=1
+repo_gpgcheck=1
+gpgcheck={{.GPGCheck}}
+gpgkey={{.RPMKeyURLs}}

@@ -1,0 +1,1 @@
+deb [signed-by=/usr/share/keyrings/{{.Repository.RPM.ID}}-archive-keyring.gpg] {{.BaseURL}}/deb/ ./

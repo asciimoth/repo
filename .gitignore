@@ -5,3 +5,8 @@
 /local
 /.direnv
 
+.ghrepo.local.yaml
+local-cache/
+build/
+.ghrepo-transaction/
+.ghrepo-upload/

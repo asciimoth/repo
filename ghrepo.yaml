@@ -1,0 +1,32 @@
+schema: 1
+repository:
+    url: https://github.com/asciimoth/repo
+    branch: master
+    layout: flat-v1
+apt:
+    suite: stable
+    component: main
+    architectures:
+        - amd64
+        - arm64
+rpm:
+    id: ghrepo
+    name: Packages
+    architectures:
+        - x86_64
+        - aarch64
+    package_signature: metadata-only
+downloads:
+    source_hosts:
+        - github.com
+    redirect_hosts:
+        - release-assets.githubusercontent.com
+        - objects.githubusercontent.com
+    max_bytes: 2147483647
+site:
+    base_url: https://repo.moth.contact
+    max_bytes: 1073741824
+    retention_days: 30
+    cname: repo.moth.contact
+storage:
+    backend: none
