@@ -110,7 +110,7 @@ packages:
         architecture: riscv64gc
     - path: deb/pool/killswitch_0.1.1_amd64_cc0911f2f20d.deb
       url: https://github.com/asciimoth/killswitch/releases/download/v0.1.1/killswitch_0.1.1_linux_amd64.deb
-      comment: Linux eBPF network kill switch for vpn apps an beyond
+      comment: Linux eBPF network kill switch for VPN apps and beyond
       source_url: https://github.com/asciimoth/killswitch
       tags:
         - ebpf
@@ -135,7 +135,7 @@ packages:
         architecture: amd64
     - path: deb/pool/killswitch_0.1.1_arm64_1da73c5ad22b.deb
       url: https://github.com/asciimoth/killswitch/releases/download/v0.1.1/killswitch_0.1.1_linux_arm64.deb
-      comment: Linux eBPF network kill switch for vpn apps an beyond
+      comment: Linux eBPF network kill switch for VPN apps and beyond
       source_url: https://github.com/asciimoth/killswitch
       tags:
         - ebpf
@@ -160,7 +160,7 @@ packages:
         architecture: arm64
     - path: deb/pool/killswitch_0.1.1_i386_bc42f3985232.deb
       url: https://github.com/asciimoth/killswitch/releases/download/v0.1.1/killswitch_0.1.1_linux_386.deb
-      comment: Linux eBPF network kill switch for vpn apps an beyond
+      comment: Linux eBPF network kill switch for VPN apps and beyond
       source_url: https://github.com/asciimoth/killswitch
       tags:
         - ebpf
@@ -185,6 +185,8 @@ packages:
         architecture: i386
     - path: deb/pool/pmark_0.1.1_amd64_25664b0227c1.deb
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/deb/pool/pmark-amd64amd64v1.deb
+      comment: Tool for tagging processes for split routing and other purposes
+      source_url: https://github.com/asciimoth/p-mark
       sha256: 25664b0227c171f0929cbe8f081f6262c2ed565080453d7351facef1034f5e4e
       size: 3379604
       source: upstream
@@ -196,6 +198,8 @@ packages:
         architecture: amd64
     - path: deb/pool/pmark_0.1.1_arm64_bf459796c91e.deb
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/deb/pool/pmark-arm64.deb
+      comment: Tool for tagging processes for split routing and other purposes
+      source_url: https://github.com/asciimoth/p-mark
       sha256: bf459796c91ee01a55af969fe3316fb38341304d7ca16a78061fe1e575373d6b
       size: 3053432
       source: upstream
@@ -207,6 +211,8 @@ packages:
         architecture: arm64
     - path: deb/pool/pmark_0.1.1_i386_6a4efe67504d.deb
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/deb/pool/pmark-i386.deb
+      comment: Tool for tagging processes for split routing and other purposes
+      source_url: https://github.com/asciimoth/p-mark
       sha256: 6a4efe67504d6e8275bd23b2b7be0271223271f8d8318c339d1a40c8c15b9362
       size: 3281082
       source: upstream
@@ -270,7 +276,7 @@ packages:
         architecture: i386
     - path: deb/pool/yggd_0.1.3_amd64_52099d4bdfe8.deb
       url: https://github.com/asciimoth/ygg/releases/download/v0.1.3/yggd_0.1.3_linux_amd64.deb
-      comment: alternative yggdrasil mesh network implementation
+      comment: Yggdrasil network daemon and command line tools
       source_url: https://github.com/asciimoth/ygg
       tags:
         - decentralization
@@ -294,7 +300,7 @@ packages:
         architecture: amd64
     - path: deb/pool/yggd_0.1.3_arm64_0ed581265f25.deb
       url: https://github.com/asciimoth/ygg/releases/download/v0.1.3/yggd_0.1.3_linux_arm64.deb
-      comment: alternative yggdrasil mesh network implementation
+      comment: Yggdrasil network daemon and command line tools
       source_url: https://github.com/asciimoth/ygg
       tags:
         - decentralization
@@ -318,7 +324,7 @@ packages:
         architecture: arm64
     - path: deb/pool/yggd_0.1.3_i386_dbdb7e13033d.deb
       url: https://github.com/asciimoth/ygg/releases/download/v0.1.3/yggd_0.1.3_linux_386.deb
-      comment: alternative yggdrasil mesh network implementation
+      comment: Yggdrasil network daemon and command line tools
       source_url: https://github.com/asciimoth/ygg
       tags:
         - decentralization
@@ -342,6 +348,22 @@ packages:
         architecture: i386
     - path: rpm/packages/aaa-0_2.0.1-1.aarch64.de69c7afb465.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/aaa-aarch64.rpm
+      comment: Swiss Army knife for animated ascii art
+      source_url: https://github.com/asciimoth/aaa
+      tags:
+        - 3a
+        - animated-ascii-art
+        - ascii
+        - ascii-art
+        - ascii-graphics
+        - cli
+        - command-line
+        - fetch
+        - rendering
+        - rust
+        - rust-lang
+        - sysfetch
+        - unicode
       sha256: de69c7afb465e6967da7175ab5a1a69e9e894b08f9a93fb330d47db04a5c15f7
       size: 4995003
       source: upstream
@@ -355,6 +377,22 @@ packages:
         architecture: aarch64
     - path: rpm/packages/aaa-0_2.0.1-1.i386.8828a4bb441f.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/aaa-i386.rpm
+      comment: Swiss Army knife for animated ascii art
+      source_url: https://github.com/asciimoth/aaa
+      tags:
+        - 3a
+        - animated-ascii-art
+        - ascii
+        - ascii-art
+        - ascii-graphics
+        - cli
+        - command-line
+        - fetch
+        - rendering
+        - rust
+        - rust-lang
+        - sysfetch
+        - unicode
       sha256: 8828a4bb441f39bf9fcba19e1b7cbdcc59e341145896e2ac8d2d8f81f81ff0be
       size: 5391782
       source: upstream
@@ -368,6 +406,22 @@ packages:
         architecture: i386
     - path: rpm/packages/aaa-0_2.0.1-1.riscv64gc.b916f0cadacd.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/aaa-riscv64gc.rpm
+      comment: Swiss Army knife for animated ascii art
+      source_url: https://github.com/asciimoth/aaa
+      tags:
+        - 3a
+        - animated-ascii-art
+        - ascii
+        - ascii-art
+        - ascii-graphics
+        - cli
+        - command-line
+        - fetch
+        - rendering
+        - rust
+        - rust-lang
+        - sysfetch
+        - unicode
       sha256: b916f0cadacd48e61edc315aab678043371a531f9a5005e2f5bd719757302762
       size: 5012999
       source: upstream
@@ -381,6 +435,22 @@ packages:
         architecture: riscv64gc
     - path: rpm/packages/aaa-0_2.0.1-1.x86_64.53ca6e3960f6.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/aaa-x86_64.rpm
+      comment: Swiss Army knife for animated ascii art
+      source_url: https://github.com/asciimoth/aaa
+      tags:
+        - 3a
+        - animated-ascii-art
+        - ascii
+        - ascii-art
+        - ascii-graphics
+        - cli
+        - command-line
+        - fetch
+        - rendering
+        - rust
+        - rust-lang
+        - sysfetch
+        - unicode
       sha256: 53ca6e3960f6dd0543474b3e3aef5815e50a9364d788e5cb9e1e28f9f9665632
       size: 5215847
       source: upstream
@@ -394,6 +464,20 @@ packages:
         architecture: x86_64
     - path: rpm/packages/killswitch-0_0.1.2-1.aarch64.4543ee0a16e7.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/killswitch-aarch64.rpm
+      comment: Linux eBPF network kill switch for VPN apps and beyond
+      source_url: https://github.com/asciimoth/killswitch
+      tags:
+        - ebpf
+        - egress-filtering
+        - firewall
+        - fwmark
+        - go
+        - linux
+        - linux-networking
+        - network-security
+        - so-mark
+        - socks-proxy
+        - vpn-killswitch
       sha256: 4543ee0a16e74cb79f252c098b9946ed5f827e2e2aa6571d58ad8b19330c627a
       size: 7664405
       source: upstream
@@ -407,6 +491,20 @@ packages:
         architecture: aarch64
     - path: rpm/packages/killswitch-0_0.1.2-1.i386.785aef655d04.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/killswitch-i386.rpm
+      comment: Linux eBPF network kill switch for VPN apps and beyond
+      source_url: https://github.com/asciimoth/killswitch
+      tags:
+        - ebpf
+        - egress-filtering
+        - firewall
+        - fwmark
+        - go
+        - linux
+        - linux-networking
+        - network-security
+        - so-mark
+        - socks-proxy
+        - vpn-killswitch
       sha256: 785aef655d04c3912166e54a1c2f90aa7096f26c953c28c0baef760b98d6f692
       size: 8080020
       source: upstream
@@ -420,6 +518,20 @@ packages:
         architecture: i386
     - path: rpm/packages/killswitch-0_0.1.2-1.x86_64.ba2117a58b64.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/killswitch-x86_64.rpm
+      comment: Linux eBPF network kill switch for VPN apps and beyond
+      source_url: https://github.com/asciimoth/killswitch
+      tags:
+        - ebpf
+        - egress-filtering
+        - firewall
+        - fwmark
+        - go
+        - linux
+        - linux-networking
+        - network-security
+        - so-mark
+        - socks-proxy
+        - vpn-killswitch
       sha256: ba2117a58b64806244675ab58cb8602e60c4f7f7beac8f2e4e509328cc56e3b0
       size: 8391800
       source: upstream
@@ -433,6 +545,8 @@ packages:
         architecture: x86_64
     - path: rpm/packages/pmark-0_0.1.2-1.aarch64.ff6355f3918f.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/pmark-aarch64.rpm
+      comment: Tool for tagging processes for split routing and other purposes
+      source_url: https://github.com/asciimoth/p-mark
       sha256: ff6355f3918fe6f3f5366c31bc2eb394be92798c7a32101e703b87f9ea950442
       size: 3039574
       source: upstream
@@ -446,6 +560,8 @@ packages:
         architecture: aarch64
     - path: rpm/packages/pmark-0_0.1.2-1.i386.a6d7f3162a9f.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/pmark-i386.rpm
+      comment: Tool for tagging processes for split routing and other purposes
+      source_url: https://github.com/asciimoth/p-mark
       sha256: a6d7f3162a9f86a3a87b4370e8dad3c3464d13d82e09e0a1ef93b2b251de0266
       size: 3272407
       source: upstream
@@ -459,6 +575,8 @@ packages:
         architecture: i386
     - path: rpm/packages/pmark-0_0.1.2-1.x86_64.379679dc2691.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/pmark-x86_64.rpm
+      comment: Tool for tagging processes for split routing and other purposes
+      source_url: https://github.com/asciimoth/p-mark
       sha256: 379679dc269150293467025d206b357ca702f061702f26448f3663fd5623471d
       size: 3373257
       source: upstream
@@ -472,6 +590,8 @@ packages:
         architecture: x86_64
     - path: rpm/packages/version-0_0.1.0-1.aarch64.859d18e35c3e.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/version-aarch64.rpm
+      comment: Multi-source semantic version management tool
+      source_url: https://github.com/asciimoth/version
       sha256: 859d18e35c3e163c364131b1ca5a0cb52de87ce183375362310fea20aff9d2cd
       size: 1679247
       source: upstream
@@ -485,6 +605,8 @@ packages:
         architecture: aarch64
     - path: rpm/packages/version-0_0.1.0-1.armv6hl.a4a10d0cbaec.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/version-armv6hl.rpm
+      comment: Multi-source semantic version management tool
+      source_url: https://github.com/asciimoth/version
       sha256: a4a10d0cbaec82d198edc582566869a37c016623be78a67236ab39bc7fc57776
       size: 1725664
       source: upstream
@@ -498,6 +620,8 @@ packages:
         architecture: armv6hl
     - path: rpm/packages/version-0_0.1.0-1.i386.629eadcafc48.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/version-i386.rpm
+      comment: Multi-source semantic version management tool
+      source_url: https://github.com/asciimoth/version
       sha256: 629eadcafc48c16e460e014f2fea354dee86a26b50ce8fe004b48e5513f2830e
       size: 1746992
       source: upstream
@@ -511,6 +635,8 @@ packages:
         architecture: i386
     - path: rpm/packages/version-0_0.1.0-1.x86_64.c6259f50d809.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/version-x86_64.rpm
+      comment: Multi-source semantic version management tool
+      source_url: https://github.com/asciimoth/version
       sha256: c6259f50d809bd58a6f4ba510c9998fe908d94598316c81c403528f2f616efd7
       size: 1853400
       source: upstream
@@ -524,6 +650,19 @@ packages:
         architecture: x86_64
     - path: rpm/packages/yggd-0_0.2.0-1.aarch64.b83e9712dcc4.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/yggd-aarch64.rpm
+      comment: Yggdrasil network daemon and command line tools
+      source_url: https://github.com/asciimoth/ygg
+      tags:
+        - decentralization
+        - e2e-encryption
+        - gonnect
+        - ipv6
+        - mesh
+        - mesh-networks
+        - routing-algorithm
+        - routing-mesh
+        - spanning-tree
+        - yggdrasil-network
       sha256: b83e9712dcc4486a8c3c3da80d87e1e84034e7e7afa5da44f9d41edd5b6ba7b8
       size: 9378346
       source: upstream
@@ -537,6 +676,19 @@ packages:
         architecture: aarch64
     - path: rpm/packages/yggd-0_0.2.0-1.i386.3adc51effca9.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/yggd-i386.rpm
+      comment: Yggdrasil network daemon and command line tools
+      source_url: https://github.com/asciimoth/ygg
+      tags:
+        - decentralization
+        - e2e-encryption
+        - gonnect
+        - ipv6
+        - mesh
+        - mesh-networks
+        - routing-algorithm
+        - routing-mesh
+        - spanning-tree
+        - yggdrasil-network
       sha256: 3adc51effca98c1a3a4ef2d894d0944dc9b375fd78466ed1b1b065cc137c7c33
       size: 9904148
       source: upstream
@@ -550,6 +702,19 @@ packages:
         architecture: i386
     - path: rpm/packages/yggd-0_0.2.0-1.x86_64.10698ea2db58.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/yggd-x86_64.rpm
+      comment: Yggdrasil network daemon and command line tools
+      source_url: https://github.com/asciimoth/ygg
+      tags:
+        - decentralization
+        - e2e-encryption
+        - gonnect
+        - ipv6
+        - mesh
+        - mesh-networks
+        - routing-algorithm
+        - routing-mesh
+        - spanning-tree
+        - yggdrasil-network
       sha256: 10698ea2db5820877ec8bfbe90b1a03b659095a45a4c9d60eff25524c4eae1e4
       size: 10314808
       source: upstream
