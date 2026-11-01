@@ -58,6 +58,93 @@ Filename: pool/aaa_2.0.1_riscv64gc_f1055110773b.deb
 Size: 4870340
 SHA256: f1055110773b4ba4f78e5d7870545c9830c746f59c4431d762b543a181de04ca
 
+Package: aaa
+Version: 2.1.0
+Architecture: amd64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 12833
+Depends: ffmpeg
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+License: GPL-3.0
+Filename: pool/aaa_2.1.0_amd64_4d8729f8dd8f.deb
+Size: 5042328
+SHA256: 4d8729f8dd8fb12a1b104dc49d7f631d3be08b5ece449cda26c0f1f4b5de94d5
+
+Package: aaa
+Version: 2.1.0
+Architecture: arm64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 12195
+Depends: ffmpeg
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+License: GPL-3.0
+Filename: pool/aaa_2.1.0_arm64_0a0eea1c66c9.deb
+Size: 4898686
+SHA256: 0a0eea1c66c937e6d52d43b86991b45ab253d05d4d1fc49942d338d7dbeaf05b
+
+Package: aaa
+Version: 2.1.0
+Architecture: i386
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 13166
+Depends: ffmpeg
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+License: GPL-3.0
+Filename: pool/aaa_2.1.0_i386_abca6faf42ea.deb
+Size: 5231670
+SHA256: abca6faf42ea05ee77c2768e70851d6e293dcf02e53b8d7c61aa237450161806
+
+Package: aaa
+Version: 2.1.0
+Architecture: riscv64gc
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 11820
+Depends: ffmpeg
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+License: GPL-3.0
+Filename: pool/aaa_2.1.0_riscv64gc_9453dde3e485.deb
+Size: 4868490
+SHA256: 9453dde3e485b3d31fe91b40a740725a5b97462a6766f992b891825cadc05623
+
+Package: ghrepo
+Version: 0.6.0
+Architecture: amd64
+Maintainer: asciimoth <asciimoth@users.noreply.github.com>
+Installed-Size: 11080
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/ghrepo
+Description: Tool for hosting DEB and RPM repositories on GitHub Pages.
+Architecture-Variant: amd64v1
+Filename: pool/ghrepo_0.6.0_amd64_0eee9ff3c109.deb
+Size: 4704540
+SHA256: 0eee9ff3c1097a30b0486bef81d6c0a6f2e4a2b891727cae36b161e5c180bc76
+
+Package: ghrepo
+Version: 0.6.0
+Architecture: arm64
+Maintainer: asciimoth <asciimoth@users.noreply.github.com>
+Installed-Size: 10176
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/ghrepo
+Description: Tool for hosting DEB and RPM repositories on GitHub Pages.
+Filename: pool/ghrepo_0.6.0_arm64_5272645f60ed.deb
+Size: 4247684
+SHA256: 5272645f60edbadfe4d54c3cb62942ffb0dcceb67d208b5a63aa22ae225d2538
+
 Package: killswitch
 Version: 0.1.1
 Architecture: amd64
@@ -99,6 +186,48 @@ License: MIT OR GPL-3.0-or-later
 Filename: pool/killswitch_0.1.1_i386_bc42f3985232.deb
 Size: 7840036
 SHA256: bc42f398523277904be5f413e64b444025f509cc709039d8acb1f869bc57167e
+
+Package: killswitch
+Version: 0.1.2
+Architecture: amd64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 18492
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/killswitch
+Description: Linux eBPF network kill switch for vpn apps an beyond
+License: MIT OR GPL-3.0-or-later
+Filename: pool/killswitch_0.1.2_amd64_28e9c3d826af.deb
+Size: 8152764
+SHA256: 28e9c3d826af24f52702984a7891fa441f9e38b275f19092ebeaf4197c968d15
+
+Package: killswitch
+Version: 0.1.2
+Architecture: arm64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 17536
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/killswitch
+Description: Linux eBPF network kill switch for vpn apps an beyond
+License: MIT OR GPL-3.0-or-later
+Filename: pool/killswitch_0.1.2_arm64_8a4afa41020a.deb
+Size: 7488350
+SHA256: 8a4afa41020a2db88f9f3a04cb9946cba5ef5247c374f039ae7e4fb002d3b6da
+
+Package: killswitch
+Version: 0.1.2
+Architecture: i386
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 17644
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/killswitch
+Description: Linux eBPF network kill switch for vpn apps an beyond
+License: MIT OR GPL-3.0-or-later
+Filename: pool/killswitch_0.1.2_i386_079fafd045bd.deb
+Size: 7840074
+SHA256: 079fafd045bd8f6b5c56b3dc4af9f648998525a5d22994f05b3173fdefcd3287
 
 Package: pmark
 Version: 0.1.1
@@ -237,4 +366,46 @@ License: LGPL-3.0
 Filename: pool/yggd_0.1.3_i386_dbdb7e13033d.deb
 Size: 9619852
 SHA256: dbdb7e13033d4ff0139bf3cbf4c36df7618ca16c3a349a4af9e015a3cbd26afe
+
+Package: yggd
+Version: 0.2.0
+Architecture: amd64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 24328
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/ygg
+Description: Yggdrasil network daemon and command line tools
+License: LGPL-3.0
+Filename: pool/yggd_0.2.0_amd64_3e7c6d942d2a.deb
+Size: 10013204
+SHA256: 3e7c6d942d2a256ad789c885913c1806477b5d9ab03a680fcc14abfe4126cae1
+
+Package: yggd
+Version: 0.2.0
+Architecture: arm64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 22784
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/ygg
+Description: Yggdrasil network daemon and command line tools
+License: LGPL-3.0
+Filename: pool/yggd_0.2.0_arm64_502761cb75e9.deb
+Size: 9153542
+SHA256: 502761cb75e91f189097bd0cde31109671d537007ad87b4db8787713aaac7f92
+
+Package: yggd
+Version: 0.2.0
+Architecture: i386
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 23100
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/ygg
+Description: Yggdrasil network daemon and command line tools
+License: LGPL-3.0
+Filename: pool/yggd_0.2.0_i386_7bf2e820590d.deb
+Size: 9633956
+SHA256: 7bf2e820590d31596a78b2fb12b355c45333772b2adef5c1a143e8b2e789ad1c
 
