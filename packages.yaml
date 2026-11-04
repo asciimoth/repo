@@ -108,6 +108,45 @@ packages:
         name: aaa
         version: 2.1.0
         architecture: riscv64gc
+    - path: deb/pool/almagest-app_0.1.0_amd64_769e4453955d.deb
+      url: https://github.com/asciimoth/almagest/releases/download/v0.1.0/almagest-app_0.1.0_linux_amd64.deb
+      comment: WIP
+      source_url: https://github.com/asciimoth/almagest
+      sha256: 769e4453955dd9c190ad1e043e31c5ecc290fb921a5e5e088d994548076d3df2
+      size: 3379880
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: almagest-app
+        version: 0.1.0
+        architecture: amd64
+    - path: deb/pool/almagest_0.1.0_amd64_ac05cd260dfa.deb
+      url: https://github.com/asciimoth/almagest/releases/download/v0.1.0/almagest_0.1.0_linux_amd64.deb
+      comment: WIP
+      source_url: https://github.com/asciimoth/almagest
+      sha256: ac05cd260dfa258214f228a2073a5f87e2caabf94d5b315d89f3dbebca981d0e
+      size: 28078728
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: almagest
+        version: 0.1.0
+        architecture: amd64
+    - path: deb/pool/almagest_0.1.0_arm64_ccbc9eb6ac9f.deb
+      url: https://github.com/asciimoth/almagest/releases/download/v0.1.0/almagest_0.1.0_linux_arm64.deb
+      comment: WIP
+      source_url: https://github.com/asciimoth/almagest
+      sha256: ccbc9eb6ac9fcc9202063732ace557ac6da6bb4ed9a68a57c27c6dca1a326dae
+      size: 15821036
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: almagest
+        version: 0.1.0
+        architecture: arm64
     - path: deb/pool/ghrepo_0.6.1_amd64_0f343acdbb7a.deb
       url: https://github.com/asciimoth/ghrepo/releases/download/v0.6.1/ghrepo_0.6.1_amd64.deb
       comment: WIP Tool for hosting deb/rm repos on GH pages
@@ -530,6 +569,51 @@ packages:
         name: aaa
         epoch: "0"
         version: 2.0.1
+        release: "1"
+        architecture: x86_64
+    - path: rpm/packages/almagest-0_0.1.0-1.aarch64.cddde8de1b1a.rpm
+      url: https://github.com/asciimoth/almagest/releases/download/v0.1.0/almagest_0.1.0_linux_arm64.rpm
+      comment: WIP
+      source_url: https://github.com/asciimoth/almagest
+      sha256: cddde8de1b1a6f286133216ac0ce43e9d42bb07a4ecde7c380829fec75589a89
+      size: 15753711
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: almagest
+        epoch: "0"
+        version: 0.1.0
+        release: "1"
+        architecture: aarch64
+    - path: rpm/packages/almagest-0_0.1.0-1.x86_64.bc5db31557e7.rpm
+      url: https://github.com/asciimoth/almagest/releases/download/v0.1.0/almagest_0.1.0_linux_amd64.rpm
+      comment: WIP
+      source_url: https://github.com/asciimoth/almagest
+      sha256: bc5db31557e733c3ba62b709c06c15ecf4564a2c59e625e73c1b93fbeff60d32
+      size: 28028413
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: almagest
+        epoch: "0"
+        version: 0.1.0
+        release: "1"
+        architecture: x86_64
+    - path: rpm/packages/almagest-app-0_0.1.0-1.x86_64.af464a4cbb20.rpm
+      url: https://github.com/asciimoth/almagest/releases/download/v0.1.0/almagest-app_0.1.0_linux_amd64.rpm
+      comment: WIP
+      source_url: https://github.com/asciimoth/almagest
+      sha256: af464a4cbb201d8c44dc7f1edb62db5b6ffe508753f093c80514713157c1b3a5
+      size: 3366449
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: almagest-app
+        epoch: "0"
+        version: 0.1.0
         release: "1"
         architecture: x86_64
     - path: rpm/packages/ghrepo-0_0.6.1-1.aarch64.32f722b06efb.rpm
