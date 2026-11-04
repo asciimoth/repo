@@ -85,6 +85,33 @@ Filename: pool/ghrepo_0.6.1_arm64_dccac5564fc2.deb
 Size: 4249110
 SHA256: dccac5564fc2353730b050529d83665bae678cde5b8baca8d8b0256fee3223d1
 
+Package: ghrepo
+Version: 0.7.0
+Architecture: amd64
+Maintainer: asciimoth <asciimoth@users.noreply.github.com>
+Installed-Size: 11084
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/ghrepo
+Description: Tool for hosting DEB and RPM repositories on GitHub Pages.
+Architecture-Variant: amd64v1
+Filename: pool/ghrepo_0.7.0_amd64_907698ea96ce.deb
+Size: 4706096
+SHA256: 907698ea96ceeee69a80562ca5f8823fe47a0682663a9d014aa62f88aa658772
+
+Package: ghrepo
+Version: 0.7.0
+Architecture: arm64
+Maintainer: asciimoth <asciimoth@users.noreply.github.com>
+Installed-Size: 10176
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/ghrepo
+Description: Tool for hosting DEB and RPM repositories on GitHub Pages.
+Filename: pool/ghrepo_0.7.0_arm64_adc2d09bbffa.deb
+Size: 4249164
+SHA256: adc2d09bbffa56bf9c96fda6cb946b4ac6014b513bbed0f517215219e9960802
+
 Package: killswitch
 Version: 0.1.2
 Architecture: amd64
