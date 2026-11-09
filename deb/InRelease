@@ -5,18 +5,18 @@ Origin: ghrepo
 Label: Packages
 Suite: stable
 Codename: stable
-Date: Mon, 09 Nov 2026 17:21:52 UTC
+Date: Mon, 09 Nov 2026 17:25:17 UTC
 Components: main
 Architectures: amd64 arm64 i386 armhf riscv64gc
 Acquire-By-Hash: no
 SHA256:
- 5562b386572a81224f886966a7fb5cab90da3e84387205faef90dda31516415d 12379 Packages
- e657089eb88f4a86ab0e813d64f91b55b5085ee9d211e805927bc6ae92baf371 2541 Packages.gz
+ 2a40cb420ce2206de342d42981781b7b2f9e367d433585b5d2dec7ba8f4d5e42 9293 Packages
+ 63ecd08765ca8af16b48359a2466a7171cbecc6a2f18dc4cfbc02ae9d596c9e3 2129 Packages.gz
 
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavIBMwAKCRC2czOfKVWM
-NcpzAQCyiP4I0oIvMOO+n3mwn/dE0rNr0kZqSCaoJgIOO7jS2wEAwjH/c+k+W1li
-Yr4OkNcZkVgb9dCtLVwBV3ehX+g03ww=
-=u0+X
+iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavIB/wAKCRC2czOfKVWM
+NQexAP4rypqP7qLSj5ywbmQPMDgza7wJlKKMN/lkeAotweWARgEAiqf4qspz4B66
+Gbmi4QBiigOIsSFsIwIvdhLZXfZb0Ac=
+=AY7r
 -----END PGP SIGNATURE-----
