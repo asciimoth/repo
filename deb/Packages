@@ -73,6 +73,21 @@ Filename: pool/almagest-app_0.1.0_amd64_769e4453955d.deb
 Size: 3379880
 SHA256: 769e4453955dd9c190ad1e043e31c5ecc290fb921a5e5e088d994548076d3df2
 
+Package: almagest-app
+Version: 0.2.0
+Architecture: amd64
+Maintainer: AsciiMoth <ascii@moth.contact>
+Installed-Size: 8005
+Depends: libgtk-3-0, libwebkit2gtk-4.1-0
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/almagest
+Description: Desktop client for the Almagest administration API.
+Architecture-Variant: amd64v1
+Filename: pool/almagest-app_0.2.0_amd64_f571980d2d89.deb
+Size: 3379880
+SHA256: f571980d2d8905daab0d60ade4b652cc01d4465bb05f0c981b44747e78acbce3
+
 Package: almagest
 Version: 0.1.0
 Architecture: amd64
@@ -99,6 +114,33 @@ Description: Userspace network graph daemon and administration client.
 Filename: pool/almagest_0.1.0_arm64_ccbc9eb6ac9f.deb
 Size: 15821036
 SHA256: ccbc9eb6ac9fcc9202063732ace557ac6da6bb4ed9a68a57c27c6dca1a326dae
+
+Package: almagest
+Version: 0.2.0
+Architecture: amd64
+Maintainer: AsciiMoth <ascii@moth.contact>
+Installed-Size: 73930
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/almagest
+Description: Userspace network graph daemon and administration client.
+Architecture-Variant: amd64v1
+Filename: pool/almagest_0.2.0_amd64_d1851da9828c.deb
+Size: 29062146
+SHA256: d1851da9828c3f106ec797f21274dd09fbea96259f4b906c22054412c59c1b61
+
+Package: almagest
+Version: 0.2.0
+Architecture: arm64
+Maintainer: AsciiMoth <ascii@moth.contact>
+Installed-Size: 44348
+Section: net
+Priority: optional
+Homepage: https://github.com/asciimoth/almagest
+Description: Userspace network graph daemon and administration client.
+Filename: pool/almagest_0.2.0_arm64_e8422867fad1.deb
+Size: 16640716
+SHA256: e8422867fad15936e8d27339a57c1ffd5e224f0e7304bbad2efbb5a3a394205c
 
 Package: ghrepo
 Version: 0.6.1
