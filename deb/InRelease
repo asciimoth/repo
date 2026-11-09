@@ -5,18 +5,18 @@ Origin: ghrepo
 Label: Packages
 Suite: stable
 Codename: stable
-Date: Mon, 09 Nov 2026 17:43:14 UTC
+Date: Mon, 09 Nov 2026 18:57:03 UTC
 Components: main
 Architectures: amd64 arm64 i386 armhf riscv64gc
 Acquire-By-Hash: no
 SHA256:
- 6b0bbf6b3f30df1b73c4b08035a6d3dc2947f86d3ba23bd44172790d7db4ec77 9293 Packages
- 16ed0230144e0d53365dba803f4ddc6b679c136f21183b9c9cee93fe02ffc81a 2133 Packages.gz
+ 658a305ab27721cb87927c5f5156dc72a8566b69432a8bf11f2d367cb122e956 10371 Packages
+ c319dac8ab28449d5fe6a4c5d098641aec07fe0ffd322d6223bdca06f78851ff 2350 Packages.gz
 
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavIGNAAKCRC2czOfKVWM
-NTRAAP4hfHAIs16zhK6bC+HCqn18XKiWfhXCcIg3YTtTqevMLAEAuAC3PtIAVXvK
-svEuMHH54i1F48DYGrFP+7/2sIOG0Q8=
-=Kvg8
+iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavIXgQAKCRC2czOfKVWM
+NUfzAPsGzJ8AsMf0Y6Dl83ZQc9/dxDa/e+zsCnbOTzydLtdqUQEAqWuA/p1atpAo
+HbnKrKK6wvPybBCK5cE6mS6eKz/i2Aw=
+=cFFC
 -----END PGP SIGNATURE-----
