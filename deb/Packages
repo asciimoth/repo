@@ -112,31 +112,31 @@ Size: 16640716
 SHA256: e8422867fad15936e8d27339a57c1ffd5e224f0e7304bbad2efbb5a3a394205c
 
 Package: ghrepo
-Version: 0.9.0
+Version: 0.9.1
 Architecture: amd64
 Maintainer: asciimoth <asciimoth@users.noreply.github.com>
-Installed-Size: 11116
+Installed-Size: 11216
 Section: utils
 Priority: optional
 Homepage: https://github.com/asciimoth/ghrepo
 Description: Tool for hosting DEB and RPM repositories on GitHub Pages.
 Architecture-Variant: amd64v1
-Filename: pool/ghrepo_0.9.0_amd64_9530a798c4ff.deb
-Size: 4718200
-SHA256: 9530a798c4ffc0a243b5dcb347e9e96a7c1687df3f5d1337487cfd1cc80d3de6
+Filename: pool/ghrepo_0.9.1_amd64_bc3e070d1508.deb
+Size: 4763398
+SHA256: bc3e070d150887fea69ce577b06b99a5b036d93477a949a4f0bd334ea977fedc
 
 Package: ghrepo
-Version: 0.9.0
+Version: 0.9.1
 Architecture: arm64
 Maintainer: asciimoth <asciimoth@users.noreply.github.com>
-Installed-Size: 10176
+Installed-Size: 10304
 Section: utils
 Priority: optional
 Homepage: https://github.com/asciimoth/ghrepo
 Description: Tool for hosting DEB and RPM repositories on GitHub Pages.
-Filename: pool/ghrepo_0.9.0_arm64_6c558cc47896.deb
-Size: 4261514
-SHA256: 6c558cc478967f6e7866c856dad883f6dd12c2c0656308ed6b7c6fa83054d378
+Filename: pool/ghrepo_0.9.1_arm64_3c7186acb1cd.deb
+Size: 4302226
+SHA256: 3c7186acb1cdbf18d06c8a7c8df731845c052e8f7d3ea1cde289cfaa969dd0ac
 
 Package: killswitch
 Version: 0.1.2
