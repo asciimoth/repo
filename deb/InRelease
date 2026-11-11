@@ -5,18 +5,18 @@ Origin: ghrepo
 Label: Packages
 Suite: stable
 Codename: stable
-Date: Wed, 11 Nov 2026 19:01:36 UTC
+Date: Wed, 11 Nov 2026 23:42:24 UTC
 Components: main
 Architectures: amd64 arm64 i386 armhf riscv64gc riscv64
 Acquire-By-Hash: no
 SHA256:
- d14e1ddc4c3003d600b03a46d74c54909dd891634a2d8a7e75df0128e952dd0f 11631 Packages
- d295e7c2f7dfa28d182bb357e0b6fa399e0605911e6209bce8bc9481c45f2db1 2635 Packages.gz
+ 5327aea334e6284f5c71d0b9a8cb0d2adeca2773210734227d628b84b82afc9c 11631 Packages
+ e78fd7a9a9428825cebb70a4906e78dc9db66346b76aa75500d6157a0fada446 2634 Packages.gz
 
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavS7kQAKCRC2czOfKVWM
-NWrLAQCHsgNxqPAt3SqEUggB2yEPtvT5N8M0yWs1hc6ppfsFuwD+MG5wHTsc9apb
-rFETAVgHZnMrz5urEKnE99TU/uYU0gk=
-=I602
+iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavT9YAAKCRC2czOfKVWM
+NYmeAP47JghuGLMESKXtgvzWgui8uXzAuhh9MigpVuYev6AirwEAvAL59Zt9pm4r
+9ChHcakBCmRX6lI/8mXBt3noP9VKxgY=
+=r5Ui
 -----END PGP SIGNATURE-----

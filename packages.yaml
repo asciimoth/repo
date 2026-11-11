@@ -885,12 +885,13 @@ packages:
       sha256: 34fec2ecca52096a4a5d182e4d748e95438098ee3ad40be6f13e3b0929a4d8d3
       size: 1340664
       source: upstream
-      state: active
+      state: retained
       format: deb
       identity:
         name: zpg
         version: 0.1.0
         architecture: amd64
+      retained_at: "2026-11-11T23:42:24Z"
     - path: deb/pool/zpg_0.1.0_arm64_eda730c2e1e6.deb
       url: https://github.com/asciimoth/zpg/releases/download/v0.1.0/zpg_0.1.0_linux_arm64.deb
       comment: Standalone cli supervisor for zig progress protocol
@@ -898,12 +899,13 @@ packages:
       sha256: eda730c2e1e64e1fddef721fcdd42da49be83ecc50a6db926fd8e0ffad68ad60
       size: 1303988
       source: upstream
-      state: active
+      state: retained
       format: deb
       identity:
         name: zpg
         version: 0.1.0
         architecture: arm64
+      retained_at: "2026-11-11T23:42:24Z"
     - path: deb/pool/zpg_0.1.0_i386_b36042b37316.deb
       url: https://github.com/asciimoth/zpg/releases/download/v0.1.0/zpg_0.1.0_linux_386.deb
       comment: Standalone cli supervisor for zig progress protocol
@@ -911,11 +913,84 @@ packages:
       sha256: b36042b3731602951cf208da0b0b8dda06363f2e47d21adf57f6e1cf62086ddb
       size: 1376502
       source: upstream
-      state: active
+      state: retained
       format: deb
       identity:
         name: zpg
         version: 0.1.0
+        architecture: i386
+      retained_at: "2026-11-11T23:42:24Z"
+    - path: deb/pool/zpg_0.2.0_amd64_4f07fa8ae45a.deb
+      url: https://github.com/asciimoth/zpg/releases/download/v0.2.0/zpg_0.2.0_linux_amd64.deb
+      comment: Standalone cli supervisor for zig progress protocol
+      source_url: https://github.com/asciimoth/zpg
+      tags:
+        - cli
+        - inter-process-communication
+        - process-supervisor
+        - progress-bar
+        - pseudo-terminal
+        - spinner
+        - terminal
+        - zig
+        - zig-progress-protocol
+        - zig-progressbar
+      sha256: 4f07fa8ae45afec5bd9b3c842b8eb8f4269fc86da93b836acb2858eb73df90e8
+      size: 1453008
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: zpg
+        version: 0.2.0
+        architecture: amd64
+    - path: deb/pool/zpg_0.2.0_arm64_c54deab3a5c1.deb
+      url: https://github.com/asciimoth/zpg/releases/download/v0.2.0/zpg_0.2.0_linux_arm64.deb
+      comment: Standalone cli supervisor for zig progress protocol
+      source_url: https://github.com/asciimoth/zpg
+      tags:
+        - cli
+        - inter-process-communication
+        - process-supervisor
+        - progress-bar
+        - pseudo-terminal
+        - spinner
+        - terminal
+        - zig
+        - zig-progress-protocol
+        - zig-progressbar
+      sha256: c54deab3a5c138e156f329280cd03030ba39691cbf111ea6e933ae8c2fe72ae9
+      size: 1418618
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: zpg
+        version: 0.2.0
+        architecture: arm64
+    - path: deb/pool/zpg_0.2.0_i386_cd9c77304f0d.deb
+      url: https://github.com/asciimoth/zpg/releases/download/v0.2.0/zpg_0.2.0_linux_386.deb
+      comment: Standalone cli supervisor for zig progress protocol
+      source_url: https://github.com/asciimoth/zpg
+      tags:
+        - cli
+        - inter-process-communication
+        - process-supervisor
+        - progress-bar
+        - pseudo-terminal
+        - spinner
+        - terminal
+        - zig
+        - zig-progress-protocol
+        - zig-progressbar
+      sha256: cd9c77304f0d9955b4d0e543a34da72b743224bf5817184c0d1fe798a408f6a0
+      size: 1501194
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: zpg
+        version: 0.2.0
         architecture: i386
     - path: rpm/packages/aaa-0_2.0.1-1.aarch64.de69c7afb465.rpm
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/rpm/packages/aaa-aarch64.rpm
@@ -1884,7 +1959,7 @@ packages:
       sha256: b3235d4e5513403274358df9ae72ad8bc074b453511b55e13d6a14342b07f50f
       size: 1331944
       source: upstream
-      state: active
+      state: retained
       format: rpm
       identity:
         name: zpg
@@ -1892,6 +1967,7 @@ packages:
         version: 0.1.0
         release: "1"
         architecture: aarch64
+      retained_at: "2026-11-11T23:42:24Z"
     - path: rpm/packages/zpg-0_0.1.0-1.i386.88c8f812d21d.rpm
       url: https://github.com/asciimoth/zpg/releases/download/v0.1.0/zpg_0.1.0_linux_386.rpm
       comment: Standalone cli supervisor for zig progress protocol
@@ -1899,7 +1975,7 @@ packages:
       sha256: 88c8f812d21d71fbe3ddad860db55fb154d56d3b4c6b6aa13bd0670e5087650c
       size: 1400700
       source: upstream
-      state: active
+      state: retained
       format: rpm
       identity:
         name: zpg
@@ -1907,6 +1983,7 @@ packages:
         version: 0.1.0
         release: "1"
         architecture: i386
+      retained_at: "2026-11-11T23:42:24Z"
     - path: rpm/packages/zpg-0_0.1.0-1.x86_64.a0ef56686e89.rpm
       url: https://github.com/asciimoth/zpg/releases/download/v0.1.0/zpg_0.1.0_linux_amd64.rpm
       comment: Standalone cli supervisor for zig progress protocol
@@ -1914,11 +1991,90 @@ packages:
       sha256: a0ef56686e894e547f53f7f536b26b2a9f747efbb28c6e6000fe9592aa9b7f58
       size: 1372983
       source: upstream
-      state: active
+      state: retained
       format: rpm
       identity:
         name: zpg
         epoch: "0"
         version: 0.1.0
+        release: "1"
+        architecture: x86_64
+      retained_at: "2026-11-11T23:42:24Z"
+    - path: rpm/packages/zpg-0_0.2.0-1.aarch64.9cdeece3d4ff.rpm
+      url: https://github.com/asciimoth/zpg/releases/download/v0.2.0/zpg_0.2.0_linux_arm64.rpm
+      comment: Standalone cli supervisor for zig progress protocol
+      source_url: https://github.com/asciimoth/zpg
+      tags:
+        - cli
+        - inter-process-communication
+        - process-supervisor
+        - progress-bar
+        - pseudo-terminal
+        - spinner
+        - terminal
+        - zig
+        - zig-progress-protocol
+        - zig-progressbar
+      sha256: 9cdeece3d4ff9be1c522755358aede55d55c973b8829b95d56b82a3d48bbe8fa
+      size: 1451814
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: zpg
+        epoch: "0"
+        version: 0.2.0
+        release: "1"
+        architecture: aarch64
+    - path: rpm/packages/zpg-0_0.2.0-1.i386.cfe31de22a65.rpm
+      url: https://github.com/asciimoth/zpg/releases/download/v0.2.0/zpg_0.2.0_linux_386.rpm
+      comment: Standalone cli supervisor for zig progress protocol
+      source_url: https://github.com/asciimoth/zpg
+      tags:
+        - cli
+        - inter-process-communication
+        - process-supervisor
+        - progress-bar
+        - pseudo-terminal
+        - spinner
+        - terminal
+        - zig
+        - zig-progress-protocol
+        - zig-progressbar
+      sha256: cfe31de22a65c920a65309e646fab80b34c4f6c6c8578cc3c659500d19d6f201
+      size: 1527751
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: zpg
+        epoch: "0"
+        version: 0.2.0
+        release: "1"
+        architecture: i386
+    - path: rpm/packages/zpg-0_0.2.0-1.x86_64.feb2546563d4.rpm
+      url: https://github.com/asciimoth/zpg/releases/download/v0.2.0/zpg_0.2.0_linux_amd64.rpm
+      comment: Standalone cli supervisor for zig progress protocol
+      source_url: https://github.com/asciimoth/zpg
+      tags:
+        - cli
+        - inter-process-communication
+        - process-supervisor
+        - progress-bar
+        - pseudo-terminal
+        - spinner
+        - terminal
+        - zig
+        - zig-progress-protocol
+        - zig-progressbar
+      sha256: feb2546563d432883033c563ad63354b2b460743422c537b7e4608c32c9e6f95
+      size: 1487824
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: zpg
+        epoch: "0"
+        version: 0.2.0
         release: "1"
         architecture: x86_64

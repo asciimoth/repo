@@ -345,38 +345,38 @@ Size: 9633956
 SHA256: 7bf2e820590d31596a78b2fb12b355c45333772b2adef5c1a143e8b2e789ad1c
 
 Package: zpg
-Version: 0.1.0
+Version: 0.2.0
 Architecture: amd64
 Maintainer: AsciiMoth <ascii@moth.contact>
-Installed-Size: 4554
+Installed-Size: 4862
 Priority: optional
 Homepage: https://github.com/asciimoth/zpg
 Description: Run commands with a progress overlay
-Filename: pool/zpg_0.1.0_amd64_34fec2ecca52.deb
-Size: 1340664
-SHA256: 34fec2ecca52096a4a5d182e4d748e95438098ee3ad40be6f13e3b0929a4d8d3
+Filename: pool/zpg_0.2.0_amd64_4f07fa8ae45a.deb
+Size: 1453008
+SHA256: 4f07fa8ae45afec5bd9b3c842b8eb8f4269fc86da93b836acb2858eb73df90e8
 
 Package: zpg
-Version: 0.1.0
+Version: 0.2.0
 Architecture: arm64
 Maintainer: AsciiMoth <ascii@moth.contact>
-Installed-Size: 4438
+Installed-Size: 4766
 Priority: optional
 Homepage: https://github.com/asciimoth/zpg
 Description: Run commands with a progress overlay
-Filename: pool/zpg_0.1.0_arm64_eda730c2e1e6.deb
-Size: 1303988
-SHA256: eda730c2e1e64e1fddef721fcdd42da49be83ecc50a6db926fd8e0ffad68ad60
+Filename: pool/zpg_0.2.0_arm64_c54deab3a5c1.deb
+Size: 1418618
+SHA256: c54deab3a5c138e156f329280cd03030ba39691cbf111ea6e933ae8c2fe72ae9
 
 Package: zpg
-Version: 0.1.0
+Version: 0.2.0
 Architecture: i386
 Maintainer: AsciiMoth <ascii@moth.contact>
-Installed-Size: 3670
+Installed-Size: 3943
 Priority: optional
 Homepage: https://github.com/asciimoth/zpg
 Description: Run commands with a progress overlay
-Filename: pool/zpg_0.1.0_i386_b36042b37316.deb
-Size: 1376502
-SHA256: b36042b3731602951cf208da0b0b8dda06363f2e47d21adf57f6e1cf62086ddb
+Filename: pool/zpg_0.2.0_i386_cd9c77304f0d.deb
+Size: 1501194
+SHA256: cd9c77304f0d9955b4d0e543a34da72b743224bf5817184c0d1fe798a408f6a0
 
