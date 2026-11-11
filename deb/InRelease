@@ -5,18 +5,18 @@ Origin: ghrepo
 Label: Packages
 Suite: stable
 Codename: stable
-Date: Wed, 11 Nov 2026 11:26:30 UTC
+Date: Wed, 11 Nov 2026 13:50:06 UTC
 Components: main
 Architectures: amd64 arm64 i386 armhf riscv64gc
 Acquire-By-Hash: no
 SHA256:
- 585cac523a4969a3762f5d41ec2cd94d79c8fb0e98b2b8cb60bc16423d44f1e0 10371 Packages
- 84ab77e6eb7c2e536c871680d019334c39ef936fa7139110894b983cc33197b1 2352 Packages.gz
+ 4aea82cca4a58d694371390c941c5bc00bdbb510e6a625896b90342c9d9d524e 11282 Packages
+ 5089518df1933b76f642dc7dfba03f00c227a79d5d7ed0c24c812da44b400802 2566 Packages.gz
 
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavRQ6AAKCRC2czOfKVWM
-Nfm7AP9nYHrT/oBS7T3lT2UWMEqOge8AJd+EeMLnfid+w80wFQD8D9DbeGl3Rfkg
-uTOls4gb7bUdkVZtJaEo7s4K1nAQggE=
-=14jq
+iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavRykAAKCRC2czOfKVWM
+NY5CAP9UvIEVjYzSNfiu1oGS3mIRQ1rPu+BJs5zRFjYl+cowZgEA/AsmlA7FKuBp
+OQauwWo3pv1dhrs8AJtH1JgYjxA+QAs=
+=WdA0
 -----END PGP SIGNATURE-----

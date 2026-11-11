@@ -516,6 +516,48 @@ packages:
         name: killswitch
         version: 0.1.2
         architecture: i386
+    - path: deb/pool/pineentry_0.1.0_amd64_418706303d36.deb
+      url: https://github.com/asciimoth/pineentry/releases/download/v0.1.0/pineentry_0.1.0_linux_amd64.deb
+      comment: GPG pinentry caching proxy
+      source_url: https://github.com/asciimoth/pineentry
+      tags:
+        - gnupg
+        - gpg
+        - gpg-agent
+        - password
+        - pin
+        - pinent
+        - plugin
+      sha256: 418706303d3636b942cd9ae3f0283b8da6c1b32beb7e988707a5c7348ec17539
+      size: 1012518
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: pineentry
+        version: 0.1.0
+        architecture: amd64
+    - path: deb/pool/pineentry_0.1.0_arm64_827203f6acd4.deb
+      url: https://github.com/asciimoth/pineentry/releases/download/v0.1.0/pineentry_0.1.0_linux_arm64.deb
+      comment: GPG pinentry caching proxy
+      source_url: https://github.com/asciimoth/pineentry
+      tags:
+        - gnupg
+        - gpg
+        - gpg-agent
+        - password
+        - pin
+        - pinent
+        - plugin
+      sha256: 827203f6acd4f79f2becdf6266dfdce272125c0879c4da9ec4430eb9385c24b3
+      size: 954790
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: pineentry
+        version: 0.1.0
+        architecture: arm64
     - path: deb/pool/pmark_0.1.1_amd64_25664b0227c1.deb
       url: https://raw.githubusercontent.com/asciimoth/repo/fe5532907986c803498ed60a68064e80f024d466/deb/pool/pmark-amd64amd64v1.deb
       comment: Tool for tagging processes for split routing and other purposes
@@ -1278,6 +1320,52 @@ packages:
         name: killswitch
         epoch: "0"
         version: 0.1.2
+        release: "1"
+        architecture: x86_64
+    - path: rpm/packages/pineentry-0_0.1.0-1.aarch64.cb02a67642e2.rpm
+      url: https://github.com/asciimoth/pineentry/releases/download/v0.1.0/pineentry_0.1.0_linux_arm64.rpm
+      comment: GPG pinentry caching proxy
+      source_url: https://github.com/asciimoth/pineentry
+      tags:
+        - gnupg
+        - gpg
+        - gpg-agent
+        - password
+        - pin
+        - pinent
+        - plugin
+      sha256: cb02a67642e29a87c9cbf71e63621c430df1ba18c1ed34c99fc2a2743448edcd
+      size: 964825
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: pineentry
+        epoch: "0"
+        version: 0.1.0
+        release: "1"
+        architecture: aarch64
+    - path: rpm/packages/pineentry-0_0.1.0-1.x86_64.1ba5020e6d77.rpm
+      url: https://github.com/asciimoth/pineentry/releases/download/v0.1.0/pineentry_0.1.0_linux_amd64.rpm
+      comment: GPG pinentry caching proxy
+      source_url: https://github.com/asciimoth/pineentry
+      tags:
+        - gnupg
+        - gpg
+        - gpg-agent
+        - password
+        - pin
+        - pinent
+        - plugin
+      sha256: 1ba5020e6d77eba4be8e9c5682475beb1c03ba93efaaacacb41f6560c95b74e4
+      size: 1035700
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: pineentry
+        epoch: "0"
+        version: 0.1.0
         release: "1"
         architecture: x86_64
     - path: rpm/packages/pmark-0_0.1.2-1.aarch64.ff6355f3918f.rpm
