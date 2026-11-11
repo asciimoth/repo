@@ -367,12 +367,13 @@ packages:
       sha256: 9f4831cb3c1d742a5278087473b29340f4f0a967a8a930f9bdf140afacd679ee
       size: 4716908
       source: upstream
-      state: active
+      state: retained
       format: deb
       identity:
         name: ghrepo
         version: 0.8.1
         architecture: amd64
+      retained_at: "2026-11-11T11:26:29Z"
     - path: deb/pool/ghrepo_0.8.1_arm64_d0deeafbf49f.deb
       url: https://github.com/asciimoth/ghrepo/releases/download/v0.8.1/ghrepo_0.8.1_arm64.deb
       comment: Tool for hosting deb/rm repos on GH pages
@@ -389,11 +390,56 @@ packages:
       sha256: d0deeafbf49f2d2791b0203f0355c55ec6342a3f5331bdc429352b14d3ad2a68
       size: 4260410
       source: upstream
-      state: active
+      state: retained
       format: deb
       identity:
         name: ghrepo
         version: 0.8.1
+        architecture: arm64
+      retained_at: "2026-11-11T11:26:29Z"
+    - path: deb/pool/ghrepo_0.9.0_amd64_9530a798c4ff.deb
+      url: https://github.com/asciimoth/ghrepo/releases/download/v0.9.0/ghrepo_0.9.0_amd64.deb
+      comment: Tool for hosting deb/rm repos on GH pages
+      source_url: https://github.com/asciimoth/ghrepo
+      tags:
+        - apt
+        - cli
+        - deb
+        - dnf
+        - github-pages
+        - gpg
+        - package-repository
+        - rpm
+      sha256: 9530a798c4ffc0a243b5dcb347e9e96a7c1687df3f5d1337487cfd1cc80d3de6
+      size: 4718200
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: ghrepo
+        version: 0.9.0
+        architecture: amd64
+    - path: deb/pool/ghrepo_0.9.0_arm64_6c558cc47896.deb
+      url: https://github.com/asciimoth/ghrepo/releases/download/v0.9.0/ghrepo_0.9.0_arm64.deb
+      comment: Tool for hosting deb/rm repos on GH pages
+      source_url: https://github.com/asciimoth/ghrepo
+      tags:
+        - apt
+        - cli
+        - deb
+        - dnf
+        - github-pages
+        - gpg
+        - package-repository
+        - rpm
+      sha256: 6c558cc478967f6e7866c856dad883f6dd12c2c0656308ed6b7c6fa83054d378
+      size: 4261514
+      source: upstream
+      state: active
+      format: deb
+      identity:
+        name: ghrepo
+        version: 0.9.0
         architecture: arm64
     - path: deb/pool/killswitch_0.1.2_amd64_28e9c3d826af.deb
       url: https://github.com/asciimoth/killswitch/releases/download/v0.1.2/killswitch_0.1.2_linux_amd64.deb
@@ -1071,7 +1117,7 @@ packages:
       sha256: 3c868f7c852f0c7a58cd5f82951edaa69e677cb0aa0d6a40013e19cb44f6537e
       size: 4233612
       source: upstream
-      state: active
+      state: retained
       format: rpm
       identity:
         name: ghrepo
@@ -1079,6 +1125,7 @@ packages:
         version: 0.8.1
         release: "1"
         architecture: aarch64
+      retained_at: "2026-11-11T11:26:29Z"
     - path: rpm/packages/ghrepo-0_0.8.1-1.x86_64.bc1c05f24f9f.rpm
       url: https://github.com/asciimoth/ghrepo/releases/download/v0.8.1/ghrepo-0.8.1-1.x86_64.rpm
       comment: Tool for hosting deb/rm repos on GH pages
@@ -1095,12 +1142,61 @@ packages:
       sha256: bc1c05f24f9fbd051fbefe65558a2382bba5c1f8deab2a92a51cb343e1a3fc2d
       size: 4705338
       source: upstream
-      state: active
+      state: retained
       format: rpm
       identity:
         name: ghrepo
         epoch: "0"
         version: 0.8.1
+        release: "1"
+        architecture: x86_64
+      retained_at: "2026-11-11T11:26:29Z"
+    - path: rpm/packages/ghrepo-0_0.9.0-1.aarch64.d3c662344094.rpm
+      url: https://github.com/asciimoth/ghrepo/releases/download/v0.9.0/ghrepo-0.9.0-1.aarch64.rpm
+      comment: Tool for hosting deb/rm repos on GH pages
+      source_url: https://github.com/asciimoth/ghrepo
+      tags:
+        - apt
+        - cli
+        - deb
+        - dnf
+        - github-pages
+        - gpg
+        - package-repository
+        - rpm
+      sha256: d3c662344094d2187dcf7eb4690a5deefd2029e2caeed4019c68e1ac5a4fab81
+      size: 4234804
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: ghrepo
+        epoch: "0"
+        version: 0.9.0
+        release: "1"
+        architecture: aarch64
+    - path: rpm/packages/ghrepo-0_0.9.0-1.x86_64.1b5ff2330ec9.rpm
+      url: https://github.com/asciimoth/ghrepo/releases/download/v0.9.0/ghrepo-0.9.0-1.x86_64.rpm
+      comment: Tool for hosting deb/rm repos on GH pages
+      source_url: https://github.com/asciimoth/ghrepo
+      tags:
+        - apt
+        - cli
+        - deb
+        - dnf
+        - github-pages
+        - gpg
+        - package-repository
+        - rpm
+      sha256: 1b5ff2330ec9eaee4c6de5d7c992532a7d90b77adee67e4f284df827c20eddd1
+      size: 4707100
+      source: upstream
+      state: active
+      format: rpm
+      identity:
+        name: ghrepo
+        epoch: "0"
+        version: 0.9.0
         release: "1"
         architecture: x86_64
     - path: rpm/packages/killswitch-0_0.1.2-1.aarch64.4543ee0a16e7.rpm
