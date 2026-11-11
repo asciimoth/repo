@@ -5,18 +5,18 @@ Origin: ghrepo
 Label: Packages
 Suite: stable
 Codename: stable
-Date: Wed, 11 Nov 2026 13:50:06 UTC
+Date: Wed, 11 Nov 2026 17:03:21 UTC
 Components: main
-Architectures: amd64 arm64 i386 armhf riscv64gc
+Architectures: amd64 arm64 i386 armhf riscv64gc riscv64
 Acquire-By-Hash: no
 SHA256:
- 4aea82cca4a58d694371390c941c5bc00bdbb510e6a625896b90342c9d9d524e 11282 Packages
- 5089518df1933b76f642dc7dfba03f00c227a79d5d7ed0c24c812da44b400802 2566 Packages.gz
+ c20d5314efe55ee5c4922433b43160cbafc07050757cb149684a7485fb759e47 11631 Packages
+ 8f361cc8adfbe654eb3d099950bdaff1f2078fcce5e702dcbbb9d89975172948 2634 Packages.gz
 
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavRykAAKCRC2czOfKVWM
-NY5CAP9UvIEVjYzSNfiu1oGS3mIRQ1rPu+BJs5zRFjYl+cowZgEA/AsmlA7FKuBp
-OQauwWo3pv1dhrs8AJtH1JgYjxA+QAs=
-=WdA0
+iHUEARYIAB0WIQSCs1B4bnpeBAue0YS2czOfKVWMNQUCavSf2wAKCRC2czOfKVWM
+NdP/AP9DUkgJP9lOq+7yPAqtMIoUc6RSBx9zzlIpU0FsygPfxQEA0WeAgazrzXz+
+6m8y4TUkP+M99BELWek6qDsQRtaRNAY=
+=kbbp
 -----END PGP SIGNATURE-----

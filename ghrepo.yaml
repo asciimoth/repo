@@ -12,6 +12,7 @@ apt:
         - i386
         - armhf
         - riscv64gc
+        - riscv64
 rpm:
     id: ghrepo
     name: Packages
@@ -21,6 +22,7 @@ rpm:
         - i386
         - armv6hl
         - riscv64gc
+        - riscv64
     package_signature: metadata-only
 downloads:
     source_hosts:

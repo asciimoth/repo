@@ -1,50 +1,5 @@
 Package: aaa
 Version: 2.1.0
-Architecture: amd64
-Maintainer: ASCII Moth <ascii@moth.contact>
-Installed-Size: 12833
-Depends: ffmpeg
-Section: utils
-Priority: optional
-Homepage: https://github.com/asciimoth/aaa
-Description: Swiss Army knife for animated ascii art
-License: GPL-3.0
-Filename: pool/aaa_2.1.0_amd64_4d8729f8dd8f.deb
-Size: 5042328
-SHA256: 4d8729f8dd8fb12a1b104dc49d7f631d3be08b5ece449cda26c0f1f4b5de94d5
-
-Package: aaa
-Version: 2.1.0
-Architecture: arm64
-Maintainer: ASCII Moth <ascii@moth.contact>
-Installed-Size: 12195
-Depends: ffmpeg
-Section: utils
-Priority: optional
-Homepage: https://github.com/asciimoth/aaa
-Description: Swiss Army knife for animated ascii art
-License: GPL-3.0
-Filename: pool/aaa_2.1.0_arm64_0a0eea1c66c9.deb
-Size: 4898686
-SHA256: 0a0eea1c66c937e6d52d43b86991b45ab253d05d4d1fc49942d338d7dbeaf05b
-
-Package: aaa
-Version: 2.1.0
-Architecture: i386
-Maintainer: ASCII Moth <ascii@moth.contact>
-Installed-Size: 13166
-Depends: ffmpeg
-Section: utils
-Priority: optional
-Homepage: https://github.com/asciimoth/aaa
-Description: Swiss Army knife for animated ascii art
-License: GPL-3.0
-Filename: pool/aaa_2.1.0_i386_abca6faf42ea.deb
-Size: 5231670
-SHA256: abca6faf42ea05ee77c2768e70851d6e293dcf02e53b8d7c61aa237450161806
-
-Package: aaa
-Version: 2.1.0
 Architecture: riscv64gc
 Maintainer: ASCII Moth <ascii@moth.contact>
 Installed-Size: 11820
@@ -57,6 +12,62 @@ License: GPL-3.0
 Filename: pool/aaa_2.1.0_riscv64gc_9453dde3e485.deb
 Size: 4868490
 SHA256: 9453dde3e485b3d31fe91b40a740725a5b97462a6766f992b891825cadc05623
+
+Package: aaa
+Version: 2.2.0
+Architecture: amd64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 13420
+Depends: ffmpeg
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+Filename: pool/aaa_2.2.0_amd64_385880d96029.deb
+Size: 5182560
+SHA256: 385880d9602999a3a56f273252eb873fa4211e9d571e257bcd516cf6a30f6e86
+
+Package: aaa
+Version: 2.2.0
+Architecture: arm64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 12749
+Depends: ffmpeg
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+Filename: pool/aaa_2.2.0_arm64_229160144934.deb
+Size: 5020104
+SHA256: 22916014493441ebeb88ea62a9c131de561c86d0a46d3be2a04789b9df1ddb41
+
+Package: aaa
+Version: 2.2.0
+Architecture: i386
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 13724
+Depends: ffmpeg
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+Filename: pool/aaa_2.2.0_i386_a09f78f021ea.deb
+Size: 5375308
+SHA256: a09f78f021ea7ba783ec5b28264558f2e8171fcc6bb00c3c1ec8aa3ac934b275
+
+Package: aaa
+Version: 2.2.0
+Architecture: riscv64
+Maintainer: ASCII Moth <ascii@moth.contact>
+Installed-Size: 12426
+Depends: ffmpeg
+Section: utils
+Priority: optional
+Homepage: https://github.com/asciimoth/aaa
+Description: Swiss Army knife for animated ascii art
+Filename: pool/aaa_2.2.0_riscv64_67f60961a596.deb
+Size: 5058086
+SHA256: 67f60961a5965b96e7156baf005543ab733242f09bc03ca06935c023d5e735fb
 
 Package: almagest-app
 Version: 0.2.0
